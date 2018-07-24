@@ -1,0 +1,1 @@
+<script type="text/javascript" src="${resource(file: 'js/app.1493415111681.js', plugin: 'console')}" ></script>
