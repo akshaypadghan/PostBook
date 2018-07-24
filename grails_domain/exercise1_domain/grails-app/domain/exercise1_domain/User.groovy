@@ -11,9 +11,9 @@ class User {
     static hasMany=[groups: UserGroup]
 
     static constraints = {
-        userName size: 5..15, blank: false
+        userName size: 5..15, blank: false, unique: true
         name blank:false
-        email blank:false
+        email blank:false, unique:true
         dob blank:false
         address blank:false
         gender blank:false
