@@ -24,14 +24,6 @@
       height: 100vh;
 
     }
-    #wrapper {
-      padding: 50px 0;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-    }
 
 
     .card{
@@ -48,7 +40,8 @@
       color: white;
     }
     .card-header{
-      padding-top: 15px;
+      padding-top: 5px;
+      padding-bottom: 5px;
     }
 
     html, body{
@@ -76,8 +69,8 @@
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar">is there</span>
-        <span class="icon-bar">anything in</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#"><g:img dir="images" file="pb.png" height="40px" width="60px" background-color="white"/></a>
@@ -129,7 +122,6 @@
                       <div class="card-header">
                           Posted By: ${post.users.name}
                       </div>
-                      <hr>
                       <div class="card-body">
                           <p class="card-text"><b>${post.description}</b></p>
                       </div>
