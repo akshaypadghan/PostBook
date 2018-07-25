@@ -20,4 +20,5 @@ class User {
         password blank:false
 
     }
+
 }

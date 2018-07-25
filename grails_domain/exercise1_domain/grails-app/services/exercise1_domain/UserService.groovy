@@ -35,7 +35,7 @@ class UserService {
             Posts post=new Posts(params)
             post.users=User.findByUserName(userName)
             //println(" user name for current post is "+post.users)
-            post.save()
+            post.save(failOnError: true)
             //post.description=post.description.reverse()  //just to check dirty checking in hibernet
 
         }

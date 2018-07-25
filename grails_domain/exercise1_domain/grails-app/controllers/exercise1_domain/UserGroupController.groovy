@@ -5,4 +5,7 @@ class UserGroupController {
     def index() {
       render "hello there!"
      }
+    def groupInfo(){
+        render(view:"groupInfo")
+    }
 }

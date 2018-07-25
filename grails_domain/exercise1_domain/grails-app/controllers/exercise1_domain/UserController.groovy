@@ -17,7 +17,7 @@ class UserController {
 
     def dashBoard(){
         def user_groups=UserGroup.list()
-        render(view: "dashboard", model:[user_name:params.inputUser, user_groups:user_groups])
+        render(view: "dashboard", model:[user_name:params.inputUser, user_groups:user_groups, posts: Posts.list()])
     }
 
     def login(){
@@ -26,16 +26,23 @@ class UserController {
             userName=params.inputUser   //need to keep track of active user
             redirect(controller: 'user', action: 'dashBoard')
         }else{
-            //need to display some message if login failed
-            redirect(controller:'user', action:'index')
+//            //need to display some message if login failed
+//            render (text: """<script type="text/javascript">
+//                    alert("Invalid Username or Password");
+//                </script>""",
+//                    contentType: 'js')
+           redirect(controller:'user', action:'index')
+
         }
 
     }
 
     def createPost(){
+        println(params)
         userService.createPost(params, userName)
-        render(view: "dashboard", model:[user_name:params.inputUser])
-        redirect(action:"dashBoard")
+        println("got some success with "+params.description+"  username is ${userName}")
+        render(view: "dashboard", model:[user_name:params.inputUser, posts:Posts.list()])
+        //redirect(action:"dashBoard")
     }
 
     def createGroup(){
