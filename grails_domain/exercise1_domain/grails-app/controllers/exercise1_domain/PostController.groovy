@@ -1,6 +1,6 @@
 package exercise1_domain
 
-class PostsController {
+class PostController {
 
     static defaultAction="hello"
 

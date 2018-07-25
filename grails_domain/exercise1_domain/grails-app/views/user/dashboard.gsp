@@ -20,13 +20,22 @@
     /* Set gray background color and 100% height */
     .sidenav {
       padding-top: 20px;
-      background-color: #f1f1f1;
-      height: 100%;
+      background-color: #d4d6d8;
+      height: 100vh;
 
     }
+    #wrapper {
+      padding: 50px 0;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
 
     .card{
-      background-color: #f4f6f9;
+      background-color: #e6ecf7;
     }
     /* Set black background color, white text and some padding */
     footer {
@@ -43,17 +52,16 @@
     }
 
     html, body{
-        height:100%;
+       min-height:100vh;
+       height:100vh;
     }
-    #groupsList{
-        position:relative;
-    }
+
 
 
     /* On small screens, set height to 'auto' for sidenav and grid */
     @media screen and (max-width: 767px) {
       .sidenav {
-        height: 100%;
+        height: 100vh;
         padding: 15px;
       }
       .row.content {height:auto;}
@@ -62,12 +70,14 @@
 </head>
 <body>
 
+
+
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        <span class="icon-bar">is there</span>
+        <span class="icon-bar">anything in</span>
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#"><g:img dir="images" file="pb.png" height="40px" width="60px" background-color="white"/></a>

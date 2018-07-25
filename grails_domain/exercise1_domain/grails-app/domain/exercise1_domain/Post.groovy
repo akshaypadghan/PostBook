@@ -1,6 +1,6 @@
 package exercise1_domain
 
-class Posts {
+class Post {
     String description
     static belongsTo=[users: User]
 
