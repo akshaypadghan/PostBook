@@ -131,10 +131,10 @@
                       </div>
                       <hr>
                       <div class="card-body">
-                          <p class="card-text">${post.description}</p>
+                          <p class="card-text"><b>${post.description}</b></p>
                       </div>
                       <div class="card-footer text-muted">
-                            Date and Time of Posting this
+                            post created on: ${post.postCreatedOn}
                       </div>
                   </div>
                   </br>
