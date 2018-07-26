@@ -37,15 +37,6 @@ class UserService {
 
 
         }
-       def updateGroup(params, userName){
-
-        def userGroup = new UserGroup(params)
-        userGroup.admin=User.findByUserName(userName)
-        userGroup.save()
-
-    }
-
-
 
 
 }

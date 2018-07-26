@@ -3,15 +3,15 @@ package exercise1_domain
 class UserGroup {
 
     String title
-    User admin
     String description
-    static hasMany=[m_user: User]
+    static hasMany=[users: User]
+   // static hasMany=[posts:Post]
     static belongsTo=User
     static constraints = {
     }
 
     @Override
     String toString() {
-        title+" "+admin+" "+description+"\n"
+        title+" "+description+"\n"
     }
 }

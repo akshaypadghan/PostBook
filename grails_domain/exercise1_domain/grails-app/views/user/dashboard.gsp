@@ -21,15 +21,15 @@
     .sidenav {
       padding-top: 20px;
       background-color: #d4d6d8;
-      min-height:100vh;
-      max-height:300vh;
+      height:100vh;
 
     }
 
-    #wrapper{
-        height:100vh;
+        #wrapper{
         overflow-y:scroll;
-    }
+        height:100vh;
+
+        }
 
     .card{
       background-color: #e6ecf7;
@@ -49,8 +49,10 @@
       padding-bottom: 5px;
     }
 
+
+
     html, body{
-       min-height:100vh;
+       height:100vh;
        //height:100vh;
     }
 
@@ -68,8 +70,8 @@
 </head>
 <body>
 
-        <div id="wrapper">
 
+                <!----------------------- Navbar-------------------------------------->
                 <nav class="navbar navbar-inverse">
                   <div class="container-fluid">
                     <div class="navbar-header">
@@ -87,20 +89,24 @@
                       </ul>
                       <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
-                                        <a href="#" data-toggle="dropdown" class="dropdown-toggle glyphicon glyphicon-user"><b class="caret"></b></a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Profile</a></li>
-                                            <li><a href="#">Logout</a></li>
-                                        </ul>
+                              <a href="#" data-toggle="dropdown" class="dropdown-toggle glyphicon glyphicon-user"><b class="caret"></b></a>
+                              <ul class="dropdown-menu">
+                                    <li><a href="#">Profile</a></li>
+                                    <li><a href="#">Logout</a></li>
+                              </ul>
                           </li>
                       </ul>
                     </div>
                   </div>
                 </nav>
 
-                <div class="container-fluid text-center">
+
+               <!----------------------container------------------------------------------>
+                <div class="container-fluid text-center" >
                   <div class="row content">
-                    <div class="col-sm-2 sidenav"  id="groupsList">
+
+                <!----------------------sidenav left---------------------------------------->
+                    <div class="col-sm-2 sidenav"  id="groupsList" >
                       <h4>Your Groups</h4>
                       <hr>
                              <g:each in="${user_groups}" var="v_groups">
@@ -109,11 +115,15 @@
                                   </li>
                               </g:each>
                                </br>
-                                   <g:form>
+                                   <g:form controller="userGroup">
                                        <g:actionSubmit value="Create New Group" action="createGroup"/>
                                    </g:form>
+
                     </div>
-                    <div class="col-sm-8 text-left">
+
+                    <!-------------------------Post Area--------------------------------------->
+                    <div class="col-sm-8 text-left" id="wrapper">
+
                         <g:form>
                           <h3>Post What's on Your Mind</h3>
                             <textarea name="description" id="description" minlength="10" maxlength="1000" rows="6" cols="88"></textarea>
@@ -127,6 +137,8 @@
                            </g:each>
 
                     </div>
+
+                   <!--------------------------sidenav right side--------------------------------->
                     <div class="col-sm-2 sidenav">
                       <div class="well">
                         <p>ADS</p>
@@ -138,10 +150,12 @@
                   </div>
                 </div>
 
+                <!-------------------------footer------------------------------------------------->
                 <footer class="container-fluid text-center">
                   <p>This site is designed and developed by Akshay Padghan</p>
                 </footer>
-        </div>
+
+
 
 </body>
 </html>

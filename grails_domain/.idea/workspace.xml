@@ -14,8 +14,8 @@
       <file leaf-file-name="UserService.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/services/exercise1_domain/UserService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+            <state relative-caret-position="718">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
         </entry>
@@ -23,62 +23,71 @@
       <file leaf-file-name="User.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/domain/exercise1_domain/User.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="24" selection-start-column="24" selection-end-column="24" />
+            <state relative-caret-position="432">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.gsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dashboard.gsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/views/user/dashboard.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="107" column="69" selection-start-line="107" selection-start-column="69" selection-end-line="107" selection-end-column="69" />
+            <state relative-caret-position="-1198">
+              <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="31" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_post.gsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/views/user/_post.gsp">
+      <file leaf-file-name="UserGroup.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/domain/exercise1_domain/UserGroup.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="126">
+              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BuildConfig.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/conf/BuildConfig.groovy">
+      <file leaf-file-name="groupInfo.gsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/views/userGroup/groupInfo.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="826">
-              <caret line="77" column="71" selection-start-line="77" selection-start-column="71" selection-end-line="77" selection-end-column="71" />
+            <state relative-caret-position="522">
+              <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Post.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/domain/exercise1_domain/Post.groovy">
+      <file leaf-file-name="createGroup.gsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/views/user/createGroup.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+            <state relative-caret-position="198">
+              <caret line="11" column="43" lean-forward="true" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PostController.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/controllers/exercise1_domain/PostController.groovy">
+      <file leaf-file-name="UserGroupController.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/controllers/exercise1_domain/UserGroupController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+            <state relative-caret-position="288">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Config.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/conf/Config.groovy">
+      <file leaf-file-name="createGroup.gsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/views/userGroup/createGroup.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="846">
+              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserGroupService.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/services/exercise1_domain/UserGroupService.groovy">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="87" column="24" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -86,8 +95,8 @@
       <file leaf-file-name="UserController.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/controllers/exercise1_domain/UserController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+            <state relative-caret-position="612">
+              <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -115,6 +124,16 @@
       <find>pos</find>
       <find>desc</find>
       <find>tex</find>
+      <find>groupIn</find>
+      <find>related</find>
+      <find>sele</find>
+      <find>println</find>
+      <find>m_user</find>
+      <find>update</find>
+      <find>createG</find>
+      <find>postArea</find>
+      <find>create new</find>
+      <find>groupsList</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -133,24 +152,26 @@
         <option value="$PROJECT_DIR$/exercise1_domain/grails-app/views/user/showForm.gsp" />
         <option value="$PROJECT_DIR$/exercise1_domain/grails-app/views/user/create.gsp" />
         <option value="$PROJECT_DIR$/exercise1_domain/grails-app/views/user/index.gsp" />
-        <option value="$PROJECT_DIR$/exercise1_domain/grails-app/domain/exercise1_domain/UserGroup.groovy" />
         <option value="$PROJECT_DIR$/exercise1_domain/grails-app/conf/BootStrap.groovy" />
-        <option value="$PROJECT_DIR$/exercise1_domain/grails-app/views/user/createGroup.gsp" />
         <option value="$PROJECT_DIR$/exercise1_domain/grails-app/views/index.gsp" />
         <option value="$PROJECT_DIR$/exercise1_domain/grails-app/domain/exercise1_domain/User.groovy" />
         <option value="$PROJECT_DIR$/exercise1_domain/grails-app/views/user/_part.gsp" />
-        <option value="$PROJECT_DIR$/exercise1_domain/grails-app/views/userGroup/groupInfo.gsp" />
-        <option value="$PROJECT_DIR$/exercise1_domain/grails-app/controllers/exercise1_domain/UserGroupController.groovy" />
         <option value="$PROJECT_DIR$/exercise1_domain/grails-app/conf/Config.groovy" />
         <option value="$PROJECT_DIR$/exercise1_domain/grails-app/domain/exercise1_domain/Posts.groovy" />
         <option value="$PROJECT_DIR$/exercise1_domain/grails-app/conf/BuildConfig.groovy" />
         <option value="$PROJECT_DIR$/exercise1_domain/grails-app/controllers/exercise1_domain/PostsController.groovy" />
-        <option value="$PROJECT_DIR$/exercise1_domain/grails-app/services/exercise1_domain/UserService.groovy" />
         <option value="$PROJECT_DIR$/exercise1_domain/grails-app/domain/exercise1_domain/Post.groovy" />
-        <option value="$PROJECT_DIR$/exercise1_domain/grails-app/conf/DataSource.groovy" />
         <option value="$PROJECT_DIR$/exercise1_domain/grails-app/views/user/_post.gsp" />
+        <option value="$PROJECT_DIR$/exercise1_domain/grails-app/conf/DataSource.groovy" />
+        <option value="$PROJECT_DIR$/exercise1_domain/grails-app/domain/exercise1_domain/UserGroup.groovy" />
+        <option value="$PROJECT_DIR$/exercise1_domain/grails-app/views/user/createGroup.gsp" />
+        <option value="$PROJECT_DIR$/exercise1_domain/grails-app/services/exercise1_domain/UserService.groovy" />
         <option value="$PROJECT_DIR$/exercise1_domain/grails-app/controllers/exercise1_domain/UserController.groovy" />
         <option value="$PROJECT_DIR$/exercise1_domain/grails-app/views/user/dashboard.gsp" />
+        <option value="$PROJECT_DIR$/exercise1_domain/grails-app/services/exercise1_domain/UserGroupService.groovy" />
+        <option value="$PROJECT_DIR$/exercise1_domain/grails-app/views/userGroup/createGroup.gsp" />
+        <option value="$PROJECT_DIR$/exercise1_domain/grails-app/controllers/exercise1_domain/UserGroupController.groovy" />
+        <option value="$PROJECT_DIR$/exercise1_domain/grails-app/views/userGroup/groupInfo.gsp" />
       </list>
     </option>
   </component>
@@ -295,22 +316,6 @@
               <item name="exercise1_domain" type="462c0819:PsiDirectoryNode" />
               <item name="grails-app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="grails_domain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="grails_domain" type="462c0819:PsiDirectoryNode" />
-              <item name="exercise1_domain" type="462c0819:PsiDirectoryNode" />
-              <item name="grails-app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="grails_domain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="grails_domain" type="462c0819:PsiDirectoryNode" />
-              <item name="exercise1_domain" type="462c0819:PsiDirectoryNode" />
-              <item name="grails-app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="userGroup" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -336,7 +341,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="_post&#9;FILE&#9;file:///home/akshay/training/Project/PostBook/grails_domain/exercise1_domain/grails-app/views/user/_post.gsp&#10;user&#9;FILE&#9;file:///home/akshay/training/Project/PostBook/grails_domain/exercise1_domain/grails-app/services/exercise1_domain/UserService.groovy&#10;Pos&#9;FILE&#9;file:///home/akshay/training/Project/PostBook/grails_domain/exercise1_domain/grails-app/domain/exercise1_domain/Post.groovy&#10;post&#9;FILE&#9;file:///home/akshay/training/Project/PostBook/grails_domain/exercise1_domain/grails-app/controllers/exercise1_domain/PostsController.groovy&#10;userCon&#9;FILE&#9;file:///home/akshay/training/Project/PostBook/grails_domain/exercise1_domain/grails-app/controllers/exercise1_domain/UserController.groovy&#10;data&#9;FILE&#9;file:///home/akshay/training/Project/PostBook/grails_domain/exercise1_domain/grails-app/conf/DataSource.groovy&#10;boot&#9;FILE&#9;file:///home/akshay/training/Project/PostBook/grails_domain/exercise1_domain/grails-app/conf/BootStrap.groovy&#10;employee&#9;null&#9;null&#10;bootstra&#9;FILE&#9;file:///home/akshay/training/grails_domain/exercise1_domain/grails-app/conf/BootStrap.groovy&#10;User.gr&#9;FILE&#9;file:///home/akshay/training/grails_domain/exercise1_domain/grails-app/domain/exercise1_domain/User.groovy&#10;main&#9;FILE&#9;file:///home/akshay/training/grails_domain/exercise1_domain/grails-app/views/layouts/main.gsp&#10;Url&#9;FILE&#9;file:///home/akshay/training/grails_domain/exercise1_domain/grails-app/conf/UrlMappings.groovy&#10;ddl.sql&#9;null&#9;null&#10;UserG&#9;FILE&#9;file:///home/akshay/training/grails_domain/exercise1_domain/grails-app/domain/exercise1_domain/UserGroup.groovy&#10;Bootstrap.gro&#9;FILE&#9;file:///home/akshay/training/grails_domain/exercise1_domain/grails-app/conf/BootStrap.groovy&#10;Bootstra&#9;PSI&#9;JAVA://jdk.nashorn.internal.runtime.linker.Bootstrap&#10;BuildConf&#9;FILE&#9;file:///home/akshay/training/grails_domain/exercise1_domain/grails-app/conf/BuildConfig.groovy&#10;DataSource.gr&#9;FILE&#9;file:///home/akshay/training/grails_domain/exercise1_domain/grails-app/conf/DataSource.groovy&#10;DataSou&#9;PSI&#9;JAVA://javax.sql.DataSource" />
+    <property name="SearchEverywhereHistoryKey" value="user&#9;FILE&#9;file:///home/akshay/training/Project/PostBook/grails_domain/exercise1_domain/grails-app/controllers/exercise1_domain/UserController.groovy&#10;userController&#9;FILE&#9;file:///home/akshay/training/Project/PostBook/grails_domain/exercise1_domain/grails-app/controllers/exercise1_domain/UserController.groovy&#10;userSer&#9;FILE&#9;file:///home/akshay/training/Project/PostBook/grails_domain/exercise1_domain/grails-app/services/exercise1_domain/UserService.groovy&#10;userS&#9;FILE&#9;file:///home/akshay/training/Project/PostBook/grails_domain/exercise1_domain/grails-app/services/exercise1_domain/UserService.groovy&#10;creat&#9;FILE&#9;file:///home/akshay/training/Project/PostBook/grails_domain/exercise1_domain/grails-app/views/user/createGroup.gsp&#10;createG&#9;FILE&#9;file:///home/akshay/training/Project/PostBook/grails_domain/exercise1_domain/grails-app/views/user/createGroup.gsp&#10;updateGroup&#9;null&#9;null&#10;userGroup&#9;FILE&#9;file:///home/akshay/training/Project/PostBook/grails_domain/exercise1_domain/grails-app/domain/exercise1_domain/UserGroup.groovy&#10;userGrou&#9;FILE&#9;file:///home/akshay/training/Project/PostBook/grails_domain/exercise1_domain/grails-app/controllers/exercise1_domain/UserGroupController.groovy&#10;_post&#9;FILE&#9;file:///home/akshay/training/Project/PostBook/grails_domain/exercise1_domain/grails-app/views/user/_post.gsp&#10;Pos&#9;FILE&#9;file:///home/akshay/training/Project/PostBook/grails_domain/exercise1_domain/grails-app/domain/exercise1_domain/Post.groovy&#10;post&#9;FILE&#9;file:///home/akshay/training/Project/PostBook/grails_domain/exercise1_domain/grails-app/controllers/exercise1_domain/PostsController.groovy&#10;userCon&#9;FILE&#9;file:///home/akshay/training/Project/PostBook/grails_domain/exercise1_domain/grails-app/controllers/exercise1_domain/UserController.groovy&#10;data&#9;FILE&#9;file:///home/akshay/training/Project/PostBook/grails_domain/exercise1_domain/grails-app/conf/DataSource.groovy&#10;boot&#9;FILE&#9;file:///home/akshay/training/Project/PostBook/grails_domain/exercise1_domain/grails-app/conf/BootStrap.groovy&#10;employee&#9;null&#9;null&#10;bootstra&#9;FILE&#9;file:///home/akshay/training/grails_domain/exercise1_domain/grails-app/conf/BootStrap.groovy&#10;User.gr&#9;FILE&#9;file:///home/akshay/training/grails_domain/exercise1_domain/grails-app/domain/exercise1_domain/User.groovy&#10;main&#9;FILE&#9;file:///home/akshay/training/grails_domain/exercise1_domain/grails-app/views/layouts/main.gsp&#10;Url&#9;FILE&#9;file:///home/akshay/training/grails_domain/exercise1_domain/grails-app/conf/UrlMappings.groovy&#10;ddl.sql&#9;null&#9;null&#10;UserG&#9;FILE&#9;file:///home/akshay/training/grails_domain/exercise1_domain/grails-app/domain/exercise1_domain/UserGroup.groovy&#10;Bootstrap.gro&#9;FILE&#9;file:///home/akshay/training/grails_domain/exercise1_domain/grails-app/conf/BootStrap.groovy&#10;Bootstra&#9;PSI&#9;JAVA://jdk.nashorn.internal.runtime.linker.Bootstrap&#10;BuildConf&#9;FILE&#9;file:///home/akshay/training/grails_domain/exercise1_domain/grails-app/conf/BuildConfig.groovy&#10;DataSource.gr&#9;FILE&#9;file:///home/akshay/training/grails_domain/exercise1_domain/grails-app/conf/DataSource.groovy&#10;DataSou&#9;PSI&#9;JAVA://javax.sql.DataSource" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -416,57 +421,30 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32934782" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18229167" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32934782" />
-    </layout>
-    <layout-to-restore>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32934782" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18229167" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32934782" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32934782" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Designer" order="3" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18229167" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32934782" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Capture Tool" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-    </layout-to-restore>
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.gsp" />
@@ -475,21 +453,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/conf/DataSource.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/conf/BuildConfig.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="52" column="51" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/domain/exercise1_domain/Department.groovy" />
     <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/domain/exercise1_domain/Employee.groovy" />
     <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/conf/DataSource.groovy">
       <provider selected="true" editor-type-id="text-editor">
@@ -591,13 +554,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/exercise1_domain/test/unit/exercise1_domain/EmployeeControllerSpec.groovy" />
-    <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/views/user/createGroup.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="40" column="76" selection-start-line="40" selection-start-column="76" selection-end-line="40" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/views/user/index.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1471">
@@ -627,53 +583,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/views/userGroup/groupInfo.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="102" selection-start-line="4" selection-start-column="102" selection-end-line="4" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/controllers/exercise1_domain/UserGroupController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/exercise1_domain/application.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/domain/exercise1_domain/UserGroup.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/conf/spring/resources.groovy">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/controllers/exercise1_domain/PostController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/domain/exercise1_domain/User.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" selection-start-column="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/services/exercise1_domain/UserService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/domain/exercise1_domain/Post.groovy">
       <provider selected="true" editor-type-id="text-editor">
@@ -689,17 +603,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/conf/DataSource.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/views/user/_post.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/jre/lib/rt.jar!/sun/rmi/server/Activation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="804" column="25" selection-start-line="804" selection-start-column="25" selection-end-line="804" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -710,17 +624,87 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/controllers/exercise1_domain/PostController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/conf/DataSource.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/domain/exercise1_domain/User.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/services/exercise1_domain/UserService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="718">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/controllers/exercise1_domain/UserController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+        <state relative-caret-position="612">
+          <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/services/exercise1_domain/UserGroupService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/controllers/exercise1_domain/UserGroupController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/views/user/createGroup.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="43" lean-forward="true" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/views/userGroup/createGroup.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="846">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/domain/exercise1_domain/UserGroup.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/views/user/dashboard.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="107" column="69" selection-start-line="107" selection-start-column="69" selection-end-line="107" selection-end-column="69" />
+        <state relative-caret-position="-1198">
+          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="31" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exercise1_domain/grails-app/views/userGroup/groupInfo.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
         </state>
       </provider>
     </entry>

@@ -31,25 +31,20 @@ class UserController {
         }
 
     }
+    def createGroup(){
+        render "you are trying to create a group"
+    }
 
     def createPost(){
-        //println("length is........................................"+params.description.length())
+
         if(params.description && (params.description).length()<=1000){
             userService.createPost(params, userName)
         }
         render(view: "dashboard", model:[user_name:params.inputUser, posts:Post.list(), user_groups:UserGroup.list()])
     }
 
-    def createGroup(){
 
-        def userList=User.list()
-        render(view:'createGroup', model:[userList:userList])
-    }
 
-    def updateGroup(){
 
-        userService.updateGroup(params, userName)
-        redirect(controller:'user', action:'dashBoard')
-    }
 
 }
