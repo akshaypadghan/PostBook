@@ -25,7 +25,7 @@ class UserController {
             userName=params.inputUser   //need to keep track of active user
             redirect(controller: 'user', action: 'dashBoard')
         }else{
-            //need to diplay message that login is failed
+            //need to display message that login is failed
            redirect(controller:'user', action:'index')
 
         }
@@ -33,8 +33,10 @@ class UserController {
     }
 
     def createPost(){
-
-        userService.createPost(params, userName)
+        //println("length is........................................"+params.description.length())
+        if(params.description && (params.description).length()<=1000){
+            userService.createPost(params, userName)
+        }
         render(view: "dashboard", model:[user_name:params.inputUser, posts:Post.list(), user_groups:UserGroup.list()])
     }
 
@@ -43,6 +45,7 @@ class UserController {
         def userList=User.list()
         render(view:'createGroup', model:[userList:userList])
     }
+
     def updateGroup(){
 
         userService.updateGroup(params, userName)

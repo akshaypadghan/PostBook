@@ -6,6 +6,7 @@ class Post {
     static belongsTo=[users: User]
 
     static constraints = {
+        description size:10..1000
     }
 
     @Override
