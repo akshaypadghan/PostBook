@@ -75,7 +75,7 @@
 <body>
 
         <div>
-
+            <!---------------------------navigation bar-------------------------->
                 <nav class="navbar navbar-inverse">
                   <div class="container-fluid">
                     <div class="navbar-header">
@@ -98,7 +98,7 @@
                     </div>
                   </div>
                 </nav>
-
+            <!------------------------------------sidenav left----------------------------->
                 <div class="container-fluid text-left">
                   <div class="row content">
                     <div class="col-sm-2 sidenav"  id="groupsList">
@@ -109,9 +109,9 @@
                                         ${member.name}
                                   </li>
                               </g:each>
-
-
                     </div>
+
+            <!-----------------------------Post Area--------------------------------------------->
                     <div class="col-sm-8 text-left" id="wrapper">
                         <g:form>
                           <h3>Post What's on Your Mind</h3>
@@ -124,8 +124,9 @@
                            <g:each in="${posts}" var="post">
                                   <g:render template="post" model="['post':post]"/>
                            </g:each>
-
                     </div>
+
+            <!----------------------------sidenav right-------------------------------------------->
                     <div class="col-sm-2 sidenav">
                       <div class="well">
                         <p>ADS</p>
@@ -136,7 +137,7 @@
                     </div>
                   </div>
                 </div>
-
+            <!-------------------------------------footer--------------------------------------------->
                 <footer class="container-fluid text-center">
                   <p>This site is designed and developed by Akshay Padghan</p>
                 </footer>

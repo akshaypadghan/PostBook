@@ -8,7 +8,8 @@ class User {
     String address
     String gender
     String password
-    static hasMany=[groups: UserGroup]
+    static hasMany=[groups: UserGroup, posts:Post]
+    static belongsTo=UserGroup
 
     static constraints = {
         userName size: 5..15, blank: false, unique: true

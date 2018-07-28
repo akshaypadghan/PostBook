@@ -31,11 +31,9 @@ class UserService {
         def createPost(params, userName){
 
             Post post = new Post(params)
-            post.users = User.findByUserName(userName)
+            post.user = User.findByUserName(userName)
             post.postCreatedOn=new Date()
             post.save(failOnError: true)
-
-
         }
 
 

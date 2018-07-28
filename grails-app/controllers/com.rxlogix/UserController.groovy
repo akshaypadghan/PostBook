@@ -5,7 +5,7 @@ import javax.swing.text.View
 class UserController {
 
     def userService
-    String userName
+    static String userName
     def index() { }
 
     def save(){
@@ -23,6 +23,8 @@ class UserController {
 
         if(userService.login(params)){
             userName=params.inputUser   //need to keep track of active user
+            session["user"]=userName
+            def loggedUser=session["user"]
             redirect(controller: 'user', action: 'dashBoard')
         }else{
             //need to display message that login is failed

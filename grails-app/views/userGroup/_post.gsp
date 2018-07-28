@@ -26,7 +26,7 @@
                   <div class="card-footer text-muted">
 
                   <p style="text-align:left; padding-left:20px;">
-                  Posted By: ${post.user.name}
+                     Posted By: ${post.user.name}
                   <span style="float:right; padding-right:15px;">created on: ${post.getPostCreatedOn()}</span>
                   </p>
                   </div>

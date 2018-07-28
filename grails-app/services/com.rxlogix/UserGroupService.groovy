@@ -5,18 +5,24 @@ import grails.transaction.Transactional
 @Transactional
 class UserGroupService {
 
-    def serviceMethod() {
-
-    }
 
     def groupInfo(params){
         //def userGroup=UserGroup.findByid(params.id)
     }
 
-    def createPost(params){
-        Post post=new Post(params)
-        post.save(failOnError: true)
+    def createPost(params, String userName, UserGroup userGroup){
+
+        println("===================this is usergroup in userservice "+userGroup)
+        Post post = new Post(params)
+        post.user = User.findByUserName(userName)
+        post.postCreatedOn=new Date()
+        //post.userGroup = userGroup
+        post.save(failOnError: true, flush: true)
+/// Post.findAllByUserGroup(userGroup)
+
+
     }
+
     def saveGroup(params){
         UserGroup userGroup = new UserGroup()
         userGroup.title=params.title
