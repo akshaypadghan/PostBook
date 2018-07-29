@@ -19,7 +19,8 @@ class UserGroupController {
             //println("============================= userGroup is: "+userGroup+" "+userGroup.users)
             userGroupService.createPost(params, session.user, userGroup)
         }
-        render(view: "groupInfo", model:[user_name:params.inputUser, posts:Post.list(), userGroup: userGroup])
+        List<Post> posts=Post.findAllByUserGroup(userGroup)
+        render(view: "groupInfo", model:[user_name:params.inputUser, posts:posts, userGroup: userGroup])
 
     }
 

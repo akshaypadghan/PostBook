@@ -83,7 +83,7 @@
                     </div>
                     <div class="collapse navbar-collapse" id="myNavbar">
                       <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
+                        <li class="active"><g:link controller="user" action="dashBoard">Home</g:link></li>
                         <li><a href="#">About</a></li>
                       </ul>
                       <ul class="nav navbar-nav navbar-right">
@@ -91,7 +91,7 @@
                                         <a href="#" data-toggle="dropdown" class="dropdown-toggle glyphicon glyphicon-user"><b class="caret"></b></a>
                                         <ul class="dropdown-menu">
                                             <li><a href="#">Profile</a></li>
-                                            <li><a href="#">Logout</a></li>
+                                            <li><g:link controller="user" action="index">Logout</g:link></li>
                                         </ul>
                           </li>
                       </ul>

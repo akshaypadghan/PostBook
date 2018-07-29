@@ -150,7 +150,7 @@
 
                                                 <div class="form-group col-lg-6">
                                                   <label for="UserName" class="control-label"> Username: </label>
-                                                  <input class="form-control" name="userName" pattern="[A-Za-z]*([0-9])?" id="userName" minlength="5" placeholder="User Name" required>
+                                                  <input class="form-control" name="userName" pattern="[A-Za-z]*([0-9])*?" id="userName" minlength="5" placeholder="User Name" required>
                                                 </div>
                                               </div>
 

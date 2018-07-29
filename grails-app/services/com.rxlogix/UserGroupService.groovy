@@ -12,11 +12,10 @@ class UserGroupService {
 
     def createPost(params, String userName, UserGroup userGroup){
 
-        println("===================this is usergroup in userservice "+userGroup)
         Post post = new Post(params)
+        post.userGroup=userGroup
         post.user = User.findByUserName(userName)
         post.postCreatedOn=new Date()
-        //post.userGroup = userGroup
         post.save(failOnError: true, flush: true)
 /// Post.findAllByUserGroup(userGroup)
 

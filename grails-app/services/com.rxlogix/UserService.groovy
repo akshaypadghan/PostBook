@@ -5,7 +5,7 @@ import grails.transaction.Transactional
 @Transactional
 class UserService {
 
-        def save(params){
+        void save(params){
 
                 User user = new User()
                 params.dob = Date.parse("yyyy-MM-dd", params.dob).clearTime()
@@ -13,7 +13,7 @@ class UserService {
                 user.save(failOnError: true)
         }
 
-        def login(params){
+        boolean login(params){
             String name = params.inputUser
             String password = params.inputPassword
             def user = User.findByUserName(name)
@@ -28,12 +28,14 @@ class UserService {
             }
         }
 
-        def createPost(params, userName){
+         List<Post> createPost(params, userName){
 
             Post post = new Post(params)
             post.user = User.findByUserName(userName)
             post.postCreatedOn=new Date()
             post.save(failOnError: true)
+            List<Post> posts=Post.findAllByUser(post.user)
+             return posts
         }
 
 

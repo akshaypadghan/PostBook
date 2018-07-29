@@ -5,13 +5,13 @@ class Post {
     Date postCreatedOn
     //later write belongs to relation with groups
     static belongsTo=[user: User]
-   // UserGroup userGroup
+    UserGroup userGroup
 
 
 
     static constraints = {
         description size:10..1000
-       // userGroup nullable : true
+        userGroup nullable : true
     }
 
     @Override
