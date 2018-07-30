@@ -8,6 +8,7 @@
 *.so
 *.bat
 *.asscache
+.asscache
 
 # Packages #
 ############
@@ -22,6 +23,10 @@
 *.tar
 *.zip
 *.idea
+.idea
+*.bat
+
+
 
 # Logs and databases #
 ######################
