@@ -5,22 +5,24 @@ class UserGroupController {
     UserGroupService userGroupService
     UserGroup userGroup
     def index() {
-      render "hello there!"
+        int id=userGroup.id
+      redirect(action: 'groupInfo', id:'id')
      }
 
     def groupInfo(){
 
         userGroup=UserGroup.findById(params.id)
-        render(view:"groupInfo", model:[userGroup:userGroup])
+        List<Post> posts=Post.findAllByUserGroup(userGroup)
+        render(view:"groupInfo", model:[userGroup:userGroup, posts: posts])
     }
 
     def createPost(){
         if(params.description && (params.description).length()<=1000){
-            //println("============================= userGroup is: "+userGroup+" "+userGroup.users)
+
             userGroupService.createPost(params, session.user, userGroup)
         }
         List<Post> posts=Post.findAllByUserGroup(userGroup)
-        render(view: "groupInfo", model:[user_name:params.inputUser, posts:posts, userGroup: userGroup])
+        render(view: "groupInfo", model:[user_name:params.inputUser, posts:posts, userGroup:userGroup])
 
     }
 

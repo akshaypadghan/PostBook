@@ -84,13 +84,13 @@
                     <div class="collapse navbar-collapse" id="myNavbar">
                       <ul class="nav navbar-nav">
                         <li class="active"><g:link controller="user" action="dashBoard">Home</g:link></li>
-                        <li><a href="#">About</a></li>
+
                       </ul>
                       <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
                                         <a href="#" data-toggle="dropdown" class="dropdown-toggle glyphicon glyphicon-user"><b class="caret"></b></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="#">Profile</a></li>
+                                            <li>&nbsp;&nbsp;&nbsp; Hello, ${session.user}</li>
                                             <li><g:link controller="user" action="index">Logout</g:link></li>
                                         </ul>
                           </li>
@@ -114,12 +114,12 @@
             <!-----------------------------Post Area--------------------------------------------->
                     <div class="col-sm-8 text-left" id="wrapper">
                         <g:form>
-                          <h3>Post What's on Your Mind</h3>
+                          <h3>Post What's on Your Mind..(max 1000 characters)</h3>
                             <textarea name="description" id="description" minlength="10" maxlength="1000" rows="6" cols="88"></textarea>
                             <g:actionSubmit value="Post" action="createPost"/>
                         </g:form>
                          <hr>
-                        <h3>Post In This Group....</h3>
+                        <h3>Posts In This Group....</h3>
 
                            <g:each in="${posts}" var="post">
                                   <g:render template="post" model="['post':post]"/>

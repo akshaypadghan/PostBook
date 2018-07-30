@@ -6,9 +6,6 @@ import grails.transaction.Transactional
 class UserGroupService {
 
 
-    def groupInfo(params){
-        //def userGroup=UserGroup.findByid(params.id)
-    }
 
     def createPost(params, String userName, UserGroup userGroup){
 
@@ -26,10 +23,12 @@ class UserGroupService {
         UserGroup userGroup = new UserGroup()
         userGroup.title=params.title
         userGroup.description=params.description
+
         (params.users).each{
             User user = User.findByName(it)
             userGroup.addToUsers(user)
         }
+
         userGroup.save(failOnError: true)
     }
 }

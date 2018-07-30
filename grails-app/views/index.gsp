@@ -118,7 +118,7 @@
                         <div class="col-lg-5 col-md-6 col-sm-12 col-xm-12">
                           <div class="container"  id="form1">
                             <h3>Sign In Here!</h3><br>
-                            <g:form >
+                            <g:form controller="user">
                                 <div class="form-group">
                                     <label for="inputUser">Username</label>
                                     <input type="text" class="form-control" id="inputUser" name="inputUser" placeholder="Username" required>
@@ -131,7 +131,7 @@
                                 <div class="checkbox">
                                     <label><input type="checkbox"> Remember me</label>
                                 </div>
-                                <g:actionSubmit value="Sign In" action="login"/>
+                                <g:actionSubmit value="Sign In"  action="login"/>
                             </g:form>
                           </div>
                         </div>
@@ -184,6 +184,7 @@
                                               </div>
 
                                                   <g:actionSubmit value="Sign Up" action="save"/>
+
 
                               </g:form>
                             </div>

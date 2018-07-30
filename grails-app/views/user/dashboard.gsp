@@ -85,13 +85,13 @@
                     <div class="collapse navbar-collapse" id="myNavbar">
                       <ul class="nav navbar-nav">
                         <li class="active"><g:link controller='user' action='dashBoard'>Home</g:link></li>
-                        <li><a href="#">About</a></li>
+                        <li>About</li>
                       </ul>
                       <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
                               <a href="#" data-toggle="dropdown" class="dropdown-toggle glyphicon glyphicon-user"><b class="caret"></b></a>
                               <ul class="dropdown-menu">
-                                    <li><a href="#">Profile</a></li>
+                                    <li>  &nbsp;&nbsp;&nbsp; Hello,  ${session.user}</li>
                                     <li><g:link controller="user" action="index">Logout</g:link></li>
                               </ul>
                           </li>
@@ -125,9 +125,18 @@
                     <div class="col-sm-8 text-left" id="wrapper">
 
                         <g:form>
-                          <h3>Post What's on Your Mind</h3>
+                          <h3>Post What's on Your Mind...(max 1000 characters)</h3>
                             <textarea name="description" id="description" minlength="10" maxlength="1000" rows="6" cols="88"></textarea>
                             <g:actionSubmit value="Post" action="createPost"/>
+                             <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Post To Group
+                                <span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                  <g:each in="${user_groups}" var="user_group">
+                                  <g:actionSubmit value="${user_group.title}"  action="createPost"/></br>
+                                  </g:each>
+                                </ul>
+                              </div>
                         </g:form>
                          <hr>
                         <h3>Post Related to You....</h3>
@@ -155,6 +164,13 @@
                   <p>This site is designed and developed by Akshay Padghan</p>
                 </footer>
 
+         <script type="text/javascript">
+                $(function () {
+                    $('#userGroup').multiselect({
+                        includeSelectAllOption: true
+                    });
+                });
+            </script>
 
 
 </body>

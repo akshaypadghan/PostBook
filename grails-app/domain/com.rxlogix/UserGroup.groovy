@@ -14,9 +14,6 @@ class UserGroup {
     }
 
 
-    static mapping = {
-        posts lazy: false
-    }
     @Override
     String toString() {
         title+" "+description+"\n"

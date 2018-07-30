@@ -28,7 +28,7 @@ class UserService {
             }
         }
 
-         List<Post> createPost(params, userName){
+         List<Post> createPost(params, String userName){
 
             Post post = new Post(params)
             post.user = User.findByUserName(userName)

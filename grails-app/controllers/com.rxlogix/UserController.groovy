@@ -6,7 +6,9 @@ class UserController {
 
     def userService
     static String userName
-    def index() { }
+    def index() {
+
+    }
 
     def save(){
         userService.save(params)
@@ -14,12 +16,7 @@ class UserController {
         redirect(controller: 'user', action: 'login')
     }
 
-    def dashBoard(){
-        List<UserGroup> user_groups=UserGroup.list()
-        User user=User.findByUserName(userName)
-        List<Post> posts=Post.findAllByUser(user)
-        render(view: "dashboard", model:[user_name:params.inputUser, user_groups:user_groups, posts: posts])
-    }
+
 
     def login(){
 
@@ -37,24 +34,33 @@ class UserController {
 
     def logout(){
         session.invalidate()
-        redirect(controller:'user', action: 'index')
+        redirect(action: 'login')
     }
-    def createGroup(){
-        render "you are trying to create a group"
-    }
+
 
     def createPost(){
         List<Post> posts
         if(params.description && (params.description).length()<=1000){
-            posts=userService.createPost(params, userName)
-        }
 
+            posts=userService.createPost(params, userName)
+        }else{
+            User user=User.findByUserName(userName)
+            posts=Post.findAllByUser(user)
+        }
 
         render(view: "dashboard", model:[user_name:params.inputUser, posts:posts, user_groups:UserGroup.list()])
     }
 
+    def dashBoard(){
 
+        User user=User.findByUserName(userName)
+        List<Post> posts=Post.findAllByUser(user)
+        render(view: "dashboard", model:[user_name:params.inputUser, user_groups:UserGroup.list(), posts: posts])
+    }
 
+    def submitPostToGroup(){
 
+        redirect(controller: 'userGroup', action:'createPost', params: params)
+    }
 
 }
