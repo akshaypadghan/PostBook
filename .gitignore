@@ -6,6 +6,8 @@
 *.exe
 *.o
 *.so
+*.bat
+*.asscache
 
 # Packages #
 ############
@@ -19,6 +21,7 @@
 *.rar
 *.tar
 *.zip
+*.idea
 
 # Logs and databases #
 ######################
@@ -35,3 +38,4 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+grailsw

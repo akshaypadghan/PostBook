@@ -14,8 +14,6 @@ class UserGroupService {
         post.user = User.findByUserName(userName)
         post.postCreatedOn=new Date()
         post.save(flush: true)
-/// Post.findAllByUserGroup(userGroup)
-
 
     }
 

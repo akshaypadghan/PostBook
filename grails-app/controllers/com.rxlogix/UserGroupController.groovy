@@ -5,9 +5,10 @@ class UserGroupController {
     UserGroupService userGroupService
     UserGroup userGroup
     def index() {
-        int id=userGroup.id
+      int id=userGroup.id
       redirect(action: 'groupInfo', id:'id')
      }
+
 
     def groupInfo(){
         userGroup = UserGroup.findById(params.id)
@@ -15,18 +16,16 @@ class UserGroupController {
         render(view:"groupInfo", model:[userGroup:userGroup, posts: posts])
     }
 
+
     def createPost(){
-
-        String groupName=params.groupName
         if(params.description && ((params.description).length()<=1000)){
-
             userGroupService.createPost(params, session.user, userGroup)
         }
        List<Post> posts=Post.findAllByUserGroup(userGroup)
        render(view: "groupInfo", model:[user_name:params.inputUser, posts:posts, userGroup:userGroup])
-
-
     }
+
+
     def createGroup(){
      def userList=User.list()
      render(view:'createGroup', model:[userList:userList])

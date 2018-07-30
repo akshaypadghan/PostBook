@@ -6,12 +6,12 @@ import grails.transaction.Transactional
 class UserService {
 
         void save(params){
-
                 User user = new User()
                 params.dob = Date.parse("yyyy-MM-dd", params.dob).clearTime()
                 user = new User(params)
                 user.save(failOnError: true)
         }
+
 
         boolean login(params){
             String name = params.inputUser
@@ -28,15 +28,14 @@ class UserService {
             }
         }
 
-         List<Post> createPost(params, String userName){
 
+         List<Post> createPost(params, String userName){
             Post post = new Post(params)
             post.user = User.findByUserName(userName)
             post.postCreatedOn=new Date()
             post.save(failOnError: true)
-             List<Post> posts=Post.listOrderByPostCreatedOn(max:5, offset:0, order:'desc')
-
-             return posts
+            List<Post> posts=Post.findAllByUser(post.user, [sort:'postCreatedOn', order:'desc', max:5])
+            return posts
         }
 
 

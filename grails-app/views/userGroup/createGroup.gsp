@@ -94,12 +94,11 @@
         });
     </script>
     </head>
-    <body>
+        <body>
 
 
 
             <div>
-                <!---------------------------navigation bar-------------------------->
                     <nav class="navbar navbar-inverse">
                       <div class="container-fluid">
                         <div class="navbar-header">
@@ -108,55 +107,48 @@
                         <div class="collapse navbar-collapse" id="myNavbar">
                           <ul class="nav navbar-nav">
                             <li class="active"><g:link controller="user" action="dashBoard">Home</g:link></li>
-
                           </ul>
                           <ul class="nav navbar-nav navbar-right">
                             <li class="dropdown">
-                                            <a href="#" data-toggle="dropdown" class="dropdown-toggle glyphicon glyphicon-user"><b class="caret"></b></a>
-                                            <ul class="dropdown-menu">
-                                                <li> &nbsp;&nbsp;&nbsp; Hello, ${session.user}</li>
-                                                <li><g:link controller="user" action="index">Logout</g:link></li>
-                                            </ul>
+                               <a href="#" data-toggle="dropdown" class="dropdown-toggle glyphicon glyphicon-user"><b class="caret"></b></a>
+                               <ul class="dropdown-menu">
+                                   <li> &nbsp;&nbsp;&nbsp; Hello, ${session.user}</li>
+                                   <li><g:link controller="user" action="index">Logout</g:link></li>
+                               </ul>
                               </li>
                           </ul>
                         </div>
                       </div>
                     </nav>
-                <!------------------------------------sidenav left----------------------------->
                     <div class="container-fluid text-left">
                       <div class="row content">
                         <div class="col-sm-2 sidenav"  id="groupsList">
-
                         </div>
-
-                <!-----------------------------Post Area--------------------------------------------->
                         <div class="col-sm-8 text-left" id="wrapper">
-                                     <div id="groupForm">
-                                                  <h1> Enter Group Information Here </h1></br>
-                                                     <form class="form-horizontal">
-                                                          <div class="form-group">
-                                                              <label for="title">Group Name</label>
-                                                              <input type="text" class="form-control" id="title" placeholder="Enter Group Name Here.." name="title">
-                                                          </div>
-                                                          <div class="form-group">
-                                                               <label for="description">Group Description</label>
-                                                              <input type="text" class="form-control" id="description" placeholder="Enter Group Description Here..." name="description">
-                                                          </div>
-                                                          <div class="form-group">
-                                                                <label for="users">Members:</label></br>
-                                                                <select id="users" name="users" multiple="multiple">
-                                                                     <g:each in="${userList}" var="user">
-                                                                           <option id="${user}">${user.name}</option>
-                                                                     </g:each>
-                                                                 </select>
-                                                              <g:actionSubmit value="add" controller="userGroup" action="saveGroup"/>
-                                                        </div>
-                                                      </div>
-                                                    </form>
-                                              </div>
+                           <div id="groupForm">
+                              <h1> Enter Group Information Here </h1></br>
+                              <form class="form-horizontal">
+                                 <div class="form-group">
+                                    <label for="title">Group Name</label>
+                                    <input type="text" class="form-control" id="title" placeholder="Enter Group Name Here.." name="title">
+                                 </div>
+                                 <div class="form-group">
+                                     <label for="description">Group Description</label>
+                                     <input type="text" class="form-control" id="description" placeholder="Enter Group Description Here..." name="description">
+                                 </div>
+                                  <div class="form-group">
+                                      <label for="users">Members:</label></br>
+                                      <select id="users" name="users" multiple="multiple">
+                                         <g:each in="${userList}" var="user">
+                                            <option id="${user}">${user.name}</option>
+                                         </g:each>
+                                      </select>
+                                      <g:actionSubmit value="add" controller="userGroup" action="saveGroup"/>
+                                  </div>
+                                  </div>
+                              </form>
+                           </div>
                         </div>
-
             </div>
-
-    </body>
-</html>
+        </body>
+    </html>
