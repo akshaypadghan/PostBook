@@ -34,7 +34,8 @@ class UserService {
             post.user = User.findByUserName(userName)
             post.postCreatedOn=new Date()
             post.save(failOnError: true)
-            List<Post> posts=Post.findAllByUser(post.user)
+             List<Post> posts=Post.listOrderByPostCreatedOn(max:5, offset:0, order:'desc')
+
              return posts
         }
 

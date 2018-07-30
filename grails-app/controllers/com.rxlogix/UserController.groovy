@@ -4,7 +4,8 @@ import javax.swing.text.View
 
 class UserController {
 
-    def userService
+    UserService userService
+    UserGroupService userGroupService
     static String userName
     def index() {
 
@@ -37,6 +38,22 @@ class UserController {
         redirect(action: 'login')
     }
 
+    def createPostForGroup(){
+
+        UserGroup userGroup
+        String groupName=params.groupName
+        if(params.description && ((params.description).length()<=1000) && params.groupName){
+
+            userGroup = UserGroup.findByTitle(groupName)
+            userGroupService.createPost(params, session.user, userGroup)
+        }
+       // List<Post> posts=Post.findAllByUserGroup(userGroup)
+        //render(view: "dashBoard", model:[user_name:params.inputUser, posts:posts, userGroup:userGroup])
+        redirect(action: 'dashBoard')
+
+    }
+
+
 
     def createPost(){
         List<Post> posts
@@ -44,9 +61,11 @@ class UserController {
 
             posts=userService.createPost(params, userName)
         }else{
-            User user=User.findByUserName(userName)
-            posts=Post.findAllByUser(user)
+
+            posts=User.findByUserName(userName)*.posts
         }
+            //posts=posts.OrderByDateUpdated(max:10, offset: 0, order: 'desc')
+            //posts=posts.sort{it.postCreatedOn}
 
         render(view: "dashboard", model:[user_name:params.inputUser, posts:posts, user_groups:UserGroup.list()])
     }
@@ -54,13 +73,11 @@ class UserController {
     def dashBoard(){
 
         User user=User.findByUserName(userName)
-        List<Post> posts=Post.findAllByUser(user)
+        //List<Post> posts=Post.findAllByUser(user)
+        List<Post> posts=Post.listOrderByPostCreatedOn(max:5, offset:0, order:"desc")
         render(view: "dashboard", model:[user_name:params.inputUser, user_groups:UserGroup.list(), posts: posts])
     }
 
-    def submitPostToGroup(){
 
-        redirect(controller: 'userGroup', action:'createPost', params: params)
-    }
 
 }

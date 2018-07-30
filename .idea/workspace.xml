@@ -3,15 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="0648cd94-85c6-406e-b852-ba720ce06a0b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grails-app/controllers/com.rxlogix/UserController.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/controllers/com.rxlogix/UserController.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grails-app/controllers/com.rxlogix/UserGroupController.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/controllers/com.rxlogix/UserGroupController.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grails-app/domain/com.rxlogix/UserGroup.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/domain/com.rxlogix/UserGroup.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/domain/com.rxlogix/Post.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/domain/com.rxlogix/Post.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grails-app/services/com.rxlogix/UserGroupService.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/services/com.rxlogix/UserGroupService.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grails-app/services/com.rxlogix/UserService.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/services/com.rxlogix/UserService.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grails-app/views/index.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/index.gsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grails-app/views/user/dashboard.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/user/dashboard.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grails-app/views/userGroup/createGroup.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/userGroup/createGroup.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grails-app/views/userGroup/groupInfo.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/userGroup/groupInfo.gsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,38 +29,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.groovy" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserController.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/com.rxlogix/UserController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="418">
+              <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.gsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/user/index.gsp">
+      <file leaf-file-name="Post.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/domain/com.rxlogix/Post.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-956">
-              <caret line="76" column="22" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
+            <state relative-caret-position="324">
+              <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.gsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/index.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-542">
-              <caret line="133" column="73" selection-start-line="133" selection-start-column="73" selection-end-line="133" selection-end-column="73" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserService.groovy" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserService.groovy" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/services/com.rxlogix/UserService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+            <state relative-caret-position="666">
+              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataSource.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -70,8 +68,8 @@
       <file leaf-file-name="UserGroupController.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/com.rxlogix/UserGroupController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+            <state relative-caret-position="360">
+              <caret line="20" column="70" selection-start-line="20" selection-start-column="70" selection-end-line="20" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -79,8 +77,8 @@
       <file leaf-file-name="UserGroupService.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/services/com.rxlogix/UserGroupService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="306">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -88,8 +86,8 @@
       <file leaf-file-name="dashboard.gsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/user/dashboard.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="93" column="52" selection-start-line="93" selection-start-column="42" selection-end-line="93" selection-end-column="60" />
+            <state relative-caret-position="770">
+              <caret line="131" column="52" selection-start-line="131" selection-start-column="52" selection-end-line="131" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -97,17 +95,17 @@
       <file leaf-file-name="groupInfo.gsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/userGroup/groupInfo.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="92" column="67" selection-start-line="92" selection-start-column="67" selection-end-line="92" selection-end-column="67" />
+            <state relative-caret-position="274">
+              <caret line="118" column="78" selection-start-line="118" selection-start-column="78" selection-end-line="118" selection-end-column="78" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="createGroup.gsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/userGroup/createGroup.gsp">
+      <file leaf-file-name="User.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/domain/com.rxlogix/User.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="148" column="106" selection-start-line="148" selection-start-column="106" selection-end-line="148" selection-end-column="106" />
+            <state relative-caret-position="162">
+              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -124,6 +122,7 @@
       <find>home</find>
       <find>post</find>
       <find>post w</find>
+      <find>create</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -137,21 +136,21 @@
         <option value="$PROJECT_DIR$/grails-app/domain/com.rxlogix/User.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/posts/index.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/userGroup/index.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/user/_post.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/userGroup/_post.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/domain/com.rxlogix/Post.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/user/index.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/userGroup/create.gsp" />
         <option value="$PROJECT_DIR$/grails-app/domain/com.rxlogix/UserGroup.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/services/com.rxlogix/UserService.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/user/dashboard.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/userGroup/createGroup.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/userGroup/groupInfo.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/index.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/com.rxlogix/UserGroupController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/user/dashboard.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" />
         <option value="$PROJECT_DIR$/grails-app/services/com.rxlogix/UserGroupService.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/com.rxlogix/Post.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/com.rxlogix/UserController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/com.rxlogix/UserGroupController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/services/com.rxlogix/UserService.groovy" />
       </list>
     </option>
   </component>
@@ -169,7 +168,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -207,6 +205,12 @@
               <item name="grails-app" type="462c0819:PsiDirectoryNode" />
               <item name="domain" type="462c0819:PsiDirectoryNode" />
               <item name="com.rxlogix" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PostBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PostBook" type="462c0819:PsiDirectoryNode" />
+              <item name="grails-app" type="462c0819:PsiDirectoryNode" />
+              <item name="i18n" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PostBook" type="b2602c69:ProjectViewProjectNode" />
@@ -252,12 +256,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="userGrou&#9;FILE&#9;file:///home/akshay/training/PostBook/grails-app/views/userGroup&#10;user&#9;FILE&#9;file:///home/akshay/training/PostBook/grails-app/controllers/com.rxlogix/UserController.groovy&#10;userSer&#9;FILE&#9;file:///home/akshay/training/PostBook/grails-app/services/com.rxlogix/UserService.groovy&#10;da&#9;FILE&#9;file:///home/akshay/training/PostBook/grails-app/conf/DataSource.groovy&#10;user.groovy&#9;FILE&#9;file:///home/akshay/training/PostBook/grails-app/domain/com.rxlogix/User.groovy&#10;data&#9;FILE&#9;file:///home/akshay/training/PostBook/grails-app/conf/DataSource.groovy&#10;dashBoar&#9;FILE&#9;file:///home/akshay/training/PostBook/grails-app/views/user/dashboard.gsp&#10;userGroup&#9;FILE&#9;file:///home/akshay/training/PostBook/grails-app/domain/com.rxlogix/UserGroup.groovy&#10;role&#9;ACTION&#9;ScrollPane-scrollEnd&#10;group&#9;FILE&#9;file:///home/akshay/training/PostBook/grails-app/views/userGroup/groupInfo.gsp&#10;groupI&#9;FILE&#9;file:///home/akshay/training/PostBook/grails-app/views/userGroup/groupInfo.gsp&#10;groupInfo&#9;FILE&#9;file:///home/akshay/training/PostBook/grails-app/views/userGroup/groupInfo.gsp&#10;userGro&#9;FILE&#9;file:///home/akshay/training/PostBook/grails-app/services/com.rxlogix/UserGroupService.groovy&#10;userGroupSer&#9;FILE&#9;file:///home/akshay/training/PostBook/grails-app/services/com.rxlogix/UserGroupService.groovy&#10;userCOntroller&#9;FILE&#9;file:///home/akshay/training/PostBook/grails-app/controllers/com.rxlogix/UserController.groovy&#10;userController&#9;FILE&#9;file:///home/akshay/training/PostBook/grails-app/controllers/com.rxlogix/UserGroupController.groovy" />
+    <property name="SearchEverywhereHistoryKey" value="dash&#9;FILE&#9;file:///home/akshay/training/PostBook/grails-app/views/user/dashboard.gsp&#10;dataS&#9;FILE&#9;file:///home/akshay/training/PostBook/grails-app/conf/DataSource.groovy&#10;userGrou&#9;FILE&#9;file:///home/akshay/training/PostBook/grails-app/views/userGroup&#10;user&#9;FILE&#9;file:///home/akshay/training/PostBook/grails-app/controllers/com.rxlogix/UserController.groovy&#10;userSer&#9;FILE&#9;file:///home/akshay/training/PostBook/grails-app/services/com.rxlogix/UserService.groovy&#10;da&#9;FILE&#9;file:///home/akshay/training/PostBook/grails-app/conf/DataSource.groovy&#10;user.groovy&#9;FILE&#9;file:///home/akshay/training/PostBook/grails-app/domain/com.rxlogix/User.groovy&#10;data&#9;FILE&#9;file:///home/akshay/training/PostBook/grails-app/conf/DataSource.groovy&#10;dashBoar&#9;FILE&#9;file:///home/akshay/training/PostBook/grails-app/views/user/dashboard.gsp&#10;userGroup&#9;FILE&#9;file:///home/akshay/training/PostBook/grails-app/domain/com.rxlogix/UserGroup.groovy&#10;role&#9;ACTION&#9;ScrollPane-scrollEnd&#10;group&#9;FILE&#9;file:///home/akshay/training/PostBook/grails-app/views/userGroup/groupInfo.gsp&#10;groupI&#9;FILE&#9;file:///home/akshay/training/PostBook/grails-app/views/userGroup/groupInfo.gsp&#10;groupInfo&#9;FILE&#9;file:///home/akshay/training/PostBook/grails-app/views/userGroup/groupInfo.gsp&#10;userGro&#9;FILE&#9;file:///home/akshay/training/PostBook/grails-app/services/com.rxlogix/UserGroupService.groovy&#10;userGroupSer&#9;FILE&#9;file:///home/akshay/training/PostBook/grails-app/services/com.rxlogix/UserGroupService.groovy&#10;userCOntroller&#9;FILE&#9;file:///home/akshay/training/PostBook/grails-app/controllers/com.rxlogix/UserController.groovy&#10;userController&#9;FILE&#9;file:///home/akshay/training/PostBook/grails-app/controllers/com.rxlogix/UserGroupController.groovy" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Grails Application Trash/Project/PostBook/grails_domain/exercise1_domain" />
   </component>
   <component name="RunDashboard">
@@ -330,6 +335,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="32" width="1920" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -512,31 +518,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/userGroup/_post.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/com.rxlogix/User.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/com.rxlogix/Post.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -554,10 +539,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/userGroup/create.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/userGroup/create.gsp" />
+    <entry file="file://$PROJECT_DIR$/grails-app/views/index.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="103" column="67" selection-start-line="103" selection-start-column="67" selection-end-line="103" selection-end-column="67" />
+        <state relative-caret-position="2394">
+          <caret line="133" column="73" selection-start-line="133" selection-start-column="73" selection-end-line="133" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/user/index.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1368">
+          <caret line="76" column="22" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/userGroup/createGroup.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2664">
+          <caret line="148" column="106" selection-start-line="148" selection-start-column="106" selection-end-line="148" selection-end-column="106" />
         </state>
       </provider>
     </entry>
@@ -568,20 +568,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/com.rxlogix/UserService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/index.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-542">
-          <caret line="133" column="73" selection-start-line="133" selection-start-column="73" selection-end-line="133" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/userGroup/index.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -589,52 +575,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/user/index.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-956">
-          <caret line="76" column="22" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/userGroup/groupInfo.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="92" column="67" selection-start-line="92" selection-start-column="67" selection-end-line="92" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/com.rxlogix/UserGroupController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/userGroup/createGroup.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="148" column="106" selection-start-line="148" selection-start-column="106" selection-end-line="148" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/com.rxlogix/UserGroupService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="396">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/user/dashboard.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="93" column="52" selection-start-line="93" selection-start-column="42" selection-end-line="93" selection-end-column="60" />
+        <state relative-caret-position="770">
+          <caret line="131" column="52" selection-start-line="131" selection-start-column="52" selection-end-line="131" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/com.rxlogix/User.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/com.rxlogix/UserGroupService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/userGroup/groupInfo.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="118" column="78" selection-start-line="118" selection-start-column="78" selection-end-line="118" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/com.rxlogix/UserGroupController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="70" selection-start-line="20" selection-start-column="70" selection-end-line="20" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/com.rxlogix/Post.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/com.rxlogix/UserController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="418">
+          <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/com.rxlogix/UserService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
         </state>
       </provider>
     </entry>

@@ -16,6 +16,6 @@ class Post {
 
     @Override
     String toString() {
-        description+" "+user+"\n"
+        description+" "+postCreatedOn+"  "+user+" "
     }
 }

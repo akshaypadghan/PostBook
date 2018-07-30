@@ -7,19 +7,19 @@ class UserGroupService {
 
 
 
-    def createPost(params, String userName, UserGroup userGroup){
+    void createPost(params, String userName, UserGroup userGroup){
 
         Post post = new Post(params)
         post.userGroup=userGroup
         post.user = User.findByUserName(userName)
         post.postCreatedOn=new Date()
-        post.save(failOnError: true, flush: true)
+        post.save(flush: true)
 /// Post.findAllByUserGroup(userGroup)
 
 
     }
 
-    def saveGroup(params){
+    void saveGroup(params){
         UserGroup userGroup = new UserGroup()
         userGroup.title=params.title
         userGroup.description=params.description

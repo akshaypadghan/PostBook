@@ -127,16 +127,11 @@
                         <g:form>
                           <h3>Post What's on Your Mind...(max 1000 characters)</h3>
                             <textarea name="description" id="description" minlength="10" maxlength="1000" rows="6" cols="88"></textarea>
-                            <g:actionSubmit value="Post" action="createPost"/>
-                             <div class="dropdown">
-                                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Post To Group
-                                <span class="caret"></span></button>
-                                <ul class="dropdown-menu">
-                                  <g:each in="${user_groups}" var="user_group">
-                                  <g:actionSubmit value="${user_group.title}"  action="createPost"/></br>
-                                  </g:each>
-                                </ul>
-                              </div>
+                           <g:actionSubmit value="Post" action="createPost"/>
+
+                           <g:select name="groupName" from="${user_groups.title}" value="${user_group}" noSelection="['':'choose group to Post']"/>
+                           <g:actionSubmit value="Post to Group" action="createPostForGroup"/>
+
                         </g:form>
                          <hr>
                         <h3>Post Related to You....</h3>
