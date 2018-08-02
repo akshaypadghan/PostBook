@@ -11,7 +11,7 @@ class UserGroupService {
 
         Post post = new Post(params)
         post.userGroup=userGroup
-        post.user = User.findByUserName(userName)
+        post.user = User.findByUsername(userName)
         post.postCreatedOn=new Date()
         post.save(flush: true)
 

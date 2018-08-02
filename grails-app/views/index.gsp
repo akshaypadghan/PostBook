@@ -121,11 +121,11 @@
                             <g:form controller="user">
                                 <div class="form-group">
                                     <label for="inputUser">Username</label>
-                                    <input type="text" class="form-control" id="inputUser" name="inputUser" placeholder="Username" required>
+                                    <input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="inputPassword">Password</label>
-                                    <input type="password" class="form-control" id="inputPassword" name="inputPassword" placeholder="Password" required>
+                                    <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
                                 </div>
 
                                 <div class="checkbox">
@@ -135,9 +135,8 @@
                             </g:form>
                           </div>
                         </div>
+
                         <div class="col-lg-7 col-md-6 col-sm-12 col-xm-12">
-
-
                             <div class="container" id="signUpForm">
                               <h3>Sign Up Here!</h3><br>
                               <g:form controller="user" data-toggle="validator" >
@@ -150,7 +149,7 @@
 
                                                 <div class="form-group col-lg-6">
                                                   <label for="UserName" class="control-label"> Username: </label>
-                                                  <input class="form-control" name="userName" pattern="[A-Za-z]*([0-9])?*" id="userName" minlength="5" placeholder="User Name" required>
+                                                  <input class="form-control" name="username" pattern="[A-Za-z]*([0-9])?*" id="username" minlength="5" placeholder="User Name" required>
                                                 </div>
                                               </div>
 

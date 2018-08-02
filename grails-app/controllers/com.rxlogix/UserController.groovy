@@ -1,14 +1,18 @@
 package com.rxlogix
 
-import javax.swing.text.View
+import grails.plugin.springsecurity.annotation.Secured
+
+@Secured('permitAll')
 
 class UserController {
 
     UserService userService
     UserGroupService userGroupService
     static String userName
-    def index() {
 
+
+    def index() {
+            render "You now have access to the page...congrats"
     }
 
     def save(){
@@ -19,24 +23,9 @@ class UserController {
 
 
 
-    def login(){
-
-        if(userService.login(params)){
-            userName=params.inputUser   //need to keep track of active user
-            session["user"]=userName
-            def loggedUser=session["user"]
-            redirect(controller: 'user', action: 'dashBoard')
-        }else{
-
-           redirect(controller:'user', action:'index', params:false)
-        }
-    }
-
-
-
     def logout(){
         session.invalidate()
-        redirect(action: 'login')
+        redirect(controller: 'logout', action: 'index')
     }
 
 
@@ -56,19 +45,22 @@ class UserController {
 
     def createPost(){
         List<Post> posts
+        userName = session.user
         if(params.description && (params.description).length()<=1000){
             posts=userService.createPost(params, userName)
         }else{
-            posts=User.findByUserName(userName)*.posts
+            posts=User.findByUsername(userName)*.posts
         }
         render(view: "dashboard", model:[user_name:params.inputUser, posts:posts, user_groups:UserGroup.list()])
     }
 
 
     def dashBoard(){
-        User user=User.findByUserName(userName)
+        userName = session.user
+        User user=User.findByUsername(userName)
         List<Post> posts=Post.listOrderByPostCreatedOn(max:5, offset:0, order:"desc")
-        render(view: "dashboard", model:[user_name:params.inputUser, user_groups:UserGroup.list(), posts: posts])
+
+        render(view: "dashboard", model:[user_name:userName, user_groups:UserGroup.list(), posts: posts])
     }
 
 

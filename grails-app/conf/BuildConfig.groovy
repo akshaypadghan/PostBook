@@ -76,7 +76,7 @@ grails.project.dependency.resolution = {
         runtime ':console:1.5.12'
 
         //spring security core plugin lies here...uncomment when needed
-        //compile "org.grails.plugins:spring-security-core:2.0.0"
+        compile "org.grails.plugins:spring-security-core:2.0.0"
 
         // Uncomment these to enable additional asset-pipeline capabilities
         //compile ":sass-asset-pipeline:1.9.0"

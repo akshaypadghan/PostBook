@@ -1,5 +1,9 @@
 package com.rxlogix
 
+import grails.plugin.springsecurity.annotation.Secured
+
+@Secured('permitAll')
+
 class UserGroupController {
     //static Scaffold=true;
     UserGroupService userGroupService
@@ -12,7 +16,7 @@ class UserGroupController {
 
     def groupInfo(){
         userGroup = UserGroup.findById(params.id)
-        List<Post> posts=Post.findAllByUserGroup(userGroup)
+        List<Post> posts=Post.findAllByUserGroup(userGroup, [sort:'postCreatedOn', order:'desc', max:5])
         render(view:"groupInfo", model:[userGroup:userGroup, posts: posts])
     }
 

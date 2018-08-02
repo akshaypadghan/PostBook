@@ -14,9 +14,9 @@ class UserService {
 
 
         boolean login(params){
-            String name = params.inputUser
-            String password = params.inputPassword
-            def user = User.findByUserName(name)
+            String name = params.username
+            String password = params.password
+            def user = User.findByUsername(name)
             if(user){
                 if(user.password==password){
                     return true
@@ -31,7 +31,7 @@ class UserService {
 
          List<Post> createPost(params, String userName){
             Post post = new Post(params)
-            post.user = User.findByUserName(userName)
+            post.user = User.findByUsername(userName)
             post.postCreatedOn=new Date()
             post.save(failOnError: true)
             List<Post> posts=Post.findAllByUser(post.user, [sort:'postCreatedOn', order:'desc', max:5])
