@@ -19,7 +19,11 @@
     </head>
     <body>
             <div class="card text-center">
-
+                  <h4 class = "card-title">
+                  <g:if test="${groupName != null}">
+                       UserGroup: ${name}
+                  </g:if>
+                  </h4>
                   <div class="card-body">
                         <p class="card-text"><b>${post.getDescription()}</b></p>
                   </div>

@@ -7,7 +7,6 @@ import grails.plugin.springsecurity.annotation.Secured
 class UserController {
 
     UserService userService
-    UserGroupService userGroupService
     static String userName
 
 
@@ -30,15 +29,9 @@ class UserController {
 
 
     def createPostForGroup(){
-        UserGroup userGroup
-        String groupName=params.groupName
-        if(params.description && ((params.description).length()<=1000) && params.groupName){
-
-            userGroup = UserGroup.findByTitle(groupName)
-            userGroupService.createPost(params, session.user, userGroup)
-        }
+        String userName = session.user
+        userService.createPostForGroup(params, userName)
         redirect(action: 'dashBoard')
-
     }
 
 
@@ -62,7 +55,5 @@ class UserController {
 
         render(view: "dashboard", model:[user_name:userName, user_groups:UserGroup.list(), posts: posts])
     }
-
-
 
 }

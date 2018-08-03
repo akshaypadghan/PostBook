@@ -4,7 +4,7 @@ import grails.transaction.Transactional
 
 @Transactional
 class UserService {
-
+    UserGroupService userGroupService
         void save(params){
                 User user = new User()
                 params.dob = Date.parse("yyyy-MM-dd", params.dob).clearTime()
@@ -38,5 +38,19 @@ class UserService {
             return posts
         }
 
+        void createPostForGroup(params, String userName){
 
+            UserGroup userGroup
+            ArrayList<String> userGroups = new ArrayList<String>()
+            userGroups.addAll(params.groupList)
+
+            if(params.description && ((params.description).length()<=1000)){
+
+                userGroups.each { groupName ->
+                    userGroup = UserGroup.findByTitle(groupName)
+                    userGroupService.createPost(params, userName, userGroup)
+                }
+            }
+
+        }
 }

@@ -21,8 +21,9 @@ class UserGroupService {
         UserGroup userGroup = new UserGroup()
         userGroup.title=params.title
         userGroup.description=params.description
-
-        (params.users).each{
+        ArrayList<String> list = new ArrayList<String>()
+        list.addAll(params.users)
+        list.each{
             User user = User.findByName(it)
             userGroup.addToUsers(user)
         }

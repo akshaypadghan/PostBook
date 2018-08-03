@@ -7,6 +7,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="http://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/css/bootstrap-multiselect.css"
+          rel="stylesheet" type="text/css" />
+      <script src="http://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/js/bootstrap-multiselect.js"
+          type="text/javascript"></script>
   <style>
             /* Remove the navbar's default margin-bottom and rounded borders */
             .navbar {
@@ -121,9 +125,15 @@
                           <h3>Post What's on Your Mind...(max 1000 characters)</h3>
                             <textarea name="description" id="description" minlength="10" maxlength="1000" rows="6" cols="88"></textarea>
                            <g:actionSubmit value="Post" action="createPost"/>
-
-                           <g:select name="groupName" from="${user_groups.title}" value="${user_group}" noSelection="['':'choose group to Post']"/>
-                           <g:actionSubmit value="Post to Group" action="createPostForGroup"/>
+                           <div class="form-group">
+                               <label for="groupList">Groups:</label></br>
+                               <select id="groupList" name="groupList" multiple="multiple">
+                                 <g:each in="${user_groups}" var="user_group">
+                                    <option id="${user_group}">${user_group.title}</option>
+                                 </g:each>
+                               </select>
+                               <g:actionSubmit value="Post to Group" controller="user" action="createPostForGroup"/>
+                            </div>
 
                         </g:form>
                          <hr>
@@ -151,7 +161,7 @@
 
          <script type="text/javascript">
                 $(function () {
-                    $('#userGroup').multiselect({
+                    $('#groupList').multiselect({
                         includeSelectAllOption: true
                     });
                 });
