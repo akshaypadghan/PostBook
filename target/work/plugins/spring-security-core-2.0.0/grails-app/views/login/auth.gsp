@@ -127,7 +127,7 @@
 
                               <h3>Sign In Here!</h3><br>
                               <g:if test='${flash.message}'>
-                                 <div class='login_message'>${flash.message}</div>
+                                 <div class='login_message alert alert-success'>${flash.message}</div>
                               </g:if>
                                <form action='${postUrl}' method='POST' id='loginForm' class='cssform' autocomplete='off'>
                                   <p>
@@ -155,6 +155,11 @@
                         <div class="col-lg-7 col-md-6 col-sm-12 col-xm-12">
                             <div class="container" id="signUpForm">
                               <h3>Sign Up Here!</h3><br>
+                              <g:if test="${flash.message}">
+                                    <div class="alert alert-secondary" role="alert">
+                                      You have successfully registered, now please login!
+                                    </div>
+                              </g:if>
                               <g:form controller="user" data-toggle="validator" >
                                               <div class="form-row">
                                                 <div class="form-group col-lg-6">
@@ -199,7 +204,6 @@
                                               </div>
 
                                                   <g:actionSubmit value="Sign Up" action="save"/>
-
 
                               </g:form>
                             </div>

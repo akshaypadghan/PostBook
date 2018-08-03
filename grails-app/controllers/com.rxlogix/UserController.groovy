@@ -16,25 +16,16 @@ class UserController {
 
     def save(){
         userService.save(params)
+        flash.message = "Please LogIn Now!!!"
         //need to display message that sign up is successful and user should go and login
-        redirect(controller: 'user', action: 'login')
+        redirect(controller: 'login', action: 'auth')
     }
-
-
-
-    def logout(){
-        session.invalidate()
-        redirect(controller: 'logout', action: 'index')
-    }
-
 
     def createPostForGroup(){
         String userName = session.user
         userService.createPostForGroup(params, userName)
         redirect(action: 'dashBoard')
     }
-
-
 
     def createPost(){
         List<Post> posts
@@ -55,5 +46,18 @@ class UserController {
 
         render(view: "dashboard", model:[user_name:userName, user_groups:UserGroup.list(), posts: posts])
     }
+
+    def userInfo(){
+            render "lets see some information about this user"
+    }
+
+    def deleteUser(){
+
+    }
+
+    def editUser(){
+
+    }
+
 
 }

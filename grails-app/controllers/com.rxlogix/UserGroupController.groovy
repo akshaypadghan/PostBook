@@ -32,12 +32,15 @@ class UserGroupController {
 
     def createGroup(){
      def userList=User.list()
-     render(view:'createGroup', model:[userList:userList])
+     String userName = session.user
+     User user = User.findByUsername(userName)
+     render(view:'createGroup', model:[userList:userList, activeUser: user])
 
     }
 
     def saveGroup(){
-        userGroupService.saveGroup(params)
+        String userName = session.user
+        userGroupService.saveGroup(params, userName)
         redirect(controller:'user', action:'dashBoard')
     }
 }

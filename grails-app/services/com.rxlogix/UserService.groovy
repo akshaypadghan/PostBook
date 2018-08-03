@@ -5,6 +5,7 @@ import grails.transaction.Transactional
 @Transactional
 class UserService {
     UserGroupService userGroupService
+
         void save(params){
                 User user = new User()
                 params.dob = Date.parse("yyyy-MM-dd", params.dob).clearTime()

@@ -109,7 +109,7 @@
                       <hr>
                              <g:each in="${userGroup.users}" var="member">
                                   <li>
-                                        ${member.name}
+                                       <g:link controller="user" action="userInfo"> ${member.name} </g:link>
                                   </li>
                               </g:each>
                     </div>

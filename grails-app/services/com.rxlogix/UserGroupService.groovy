@@ -17,14 +17,23 @@ class UserGroupService {
 
     }
 
-    void saveGroup(params){
+    void saveGroup(params, String userName){
         UserGroup userGroup = new UserGroup()
+        User user= new User()
         userGroup.title=params.title
         userGroup.description=params.description
         ArrayList<String> list = new ArrayList<String>()
         list.addAll(params.users)
+        list.add(userName)
+
         list.each{
-            User user = User.findByName(it)
+
+            if(userName.equals(it)){
+                user = User.findByUsername(it)
+            }else{
+                user = User.findByName(it)
+            }
+
             userGroup.addToUsers(user)
         }
 

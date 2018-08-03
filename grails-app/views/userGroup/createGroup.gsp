@@ -140,7 +140,9 @@
                                       <label for="users">Members:</label></br>
                                       <select id="users" name="users" multiple="multiple">
                                          <g:each in="${userList}" var="user">
-                                            <option id="${user}">${user.name}</option>
+                                               <g:if test="${ activeUser != user}">
+                                                   <option id="${user}">${user.name}</option>
+                                               </g:if>
                                          </g:each>
                                       </select>
                                       <g:actionSubmit value="add" controller="userGroup" action="saveGroup"/>
