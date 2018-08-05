@@ -39,8 +39,19 @@ class UserService {
             return posts
         }
 
-        void createPostForGroup(params, String userName){
+        Map userInfo(params){
+            Map results = [:]
+            User user=User.findById(params.id)
+            results.put("user", user)
+            ArrayList<UserGroup> user_groups = new ArrayList<UserGroup>()
+            user_groups.addAll(user.groups)
+            results.put("user_groups", user_groups)
+            List<Post> posts=Post.listOrderByPostCreatedOn(max:5, offset:0, order:"desc")
+            results.put("posts", posts)
+            return results
+        }
 
+        void createPostForGroup(params, String userName){
             UserGroup userGroup
             ArrayList<String> userGroups = new ArrayList<String>()
             userGroups.addAll(params.groupList)

@@ -42,13 +42,16 @@ class UserController {
     def dashBoard(){
         userName = session.user
         User user=User.findByUsername(userName)
+        ArrayList<UserGroup> user_groups = new ArrayList<UserGroup>()
+        user_groups.addAll(user.groups)
         List<Post> posts=Post.listOrderByPostCreatedOn(max:5, offset:0, order:"desc")
 
-        render(view: "dashboard", model:[user_name:userName, user_groups:UserGroup.list(), posts: posts])
+        render(view: "dashboard", model:[user_name:userName, user_groups:user_groups, posts: posts])
     }
 
     def userInfo(){
-            render "lets see some information about this user"
+        Map results = userService.userInfo(params)
+        render(view: "userInfo", model:[user_name:session.user, user:results.user, user_groups:results.user_groups, posts: results.posts])
     }
 
     def deleteUser(){

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>DashBoard</title>
+  <title>UserInfo</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -120,24 +120,29 @@
 
                     </div>
                     <div class="col-sm-8 text-left" id="wrapper">
-
-                        <g:form>
-                          <h3>Post What's on Your Mind...(max 1000 characters)</h3>
-                            <textarea name="description" id="description" minlength="10" maxlength="1000" rows="6" cols="88"></textarea>
-                           <g:actionSubmit value="Post" action="createPost" class="btn btn-primary"/>
-                           <div class="form-group">
-                               <label for="groupList">Groups:</label></br>
-                               <select id="groupList" name="groupList" multiple="multiple">
-                                 <g:each in="${user_groups}" var="user_group">
-                                    <option id="${user_group}">${user_group.title}</option>
-                                 </g:each>
-                               </select>
-                               <g:actionSubmit value="Post to Group" controller="user" action="createPostForGroup" class="btn btn-success"/>
+                        </br></br>
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                              <label class="control-label col-sm-2" for="name">User Name::</label>
+                              <div class="col-sm-10">
+                                <p class="form-control-static">${user.name}</p>
+                              </div>
                             </div>
-
-                        </g:form>
+                            <div class="form-group">
+                              <label class="control-label col-sm-2" for="email">Email:</label>
+                              <div class="col-sm-10">
+                                <p class="form-control-static">${user.email}</p>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label col-sm-2" for="pwd">Username:</label>
+                              <div class="col-sm-10">
+                                <p class="form-control-static">${user.username}</p>
+                              </div>
+                            </div>
+                          </form>
                          <hr>
-                        <h3>Post Related to You....</h3>
+                        <h3>Post Related to User....</h3>
 
                            <g:each in="${posts}" var="post">
                                   <g:render template="post" model="['post':post]"/>

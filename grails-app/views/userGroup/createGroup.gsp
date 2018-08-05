@@ -136,7 +136,7 @@
                                      <label for="description">Group Description</label>
                                      <input type="text" class="form-control" id="description" placeholder="Enter Group Description Here..." name="description">
                                  </div>
-                                  <div class="form-group">
+                                 <div class="form-group">
                                       <label for="users">Members:</label></br>
                                       <select id="users" name="users" multiple="multiple">
                                          <g:each in="${userList}" var="user">
@@ -145,12 +145,12 @@
                                                </g:if>
                                          </g:each>
                                       </select>
-                                      <g:actionSubmit value="add" controller="userGroup" action="saveGroup"/>
-                                  </div>
+                                      <g:actionSubmit value="add" controller="userGroup" action="saveGroup" class="btn btn-primary"/>
+                                 </div>
                                   </div>
                               </form>
-                           </div>
-                        </div>
+                      </div>
+                    </div>
             </div>
         </body>
     </html>

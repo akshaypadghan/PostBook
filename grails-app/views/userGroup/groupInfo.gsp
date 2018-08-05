@@ -93,7 +93,7 @@
                                             <li>&nbsp;&nbsp;&nbsp; Hello, ${session.user}</li>
                                             <li>
                                                 <form name="logout" method="POST" action="${createLink(controller:'logout') }">
-                                                <input type="submit" value="logout"></form>
+                                               &nbsp;&nbsp; <input class="btn btn-success" type="submit" value="logout"></form>
                                             </li>
                                         </ul>
                           </li>
@@ -109,7 +109,7 @@
                       <hr>
                              <g:each in="${userGroup.users}" var="member">
                                   <li>
-                                       <g:link controller="user" action="userInfo"> ${member.name} </g:link>
+                                       <g:link controller="user" action="userInfo" id="${member.id}"> ${member.name} </g:link>
                                   </li>
                               </g:each>
                     </div>
@@ -119,7 +119,7 @@
                         <g:form>
                           <h3>Post What's on Your Mind..(max 1000 characters)</h3>
                             <textarea name="description" id="description" minlength="10" maxlength="1000" rows="6" cols="88"></textarea>
-                            <g:actionSubmit value="Post" action="createPost"/>
+                            <g:actionSubmit value="Post" action="createPost" class="btn btn-success"/>
                         </g:form>
                          <hr>
                         <h3>Posts In This Group....</h3>
