@@ -80,6 +80,8 @@ grails.project.dependency.resolution = {
         //spring security core plugin lies here...uncomment when needed
         compile "org.grails.plugins:spring-security-core:2.0.0"
 
+        //cron job plugin here
+        compile "org.grails.plugins:quartz:1.0.2"
 
         // Uncomment these to enable additional asset-pipeline capabilities
         //compile ":sass-asset-pipeline:1.9.0"
