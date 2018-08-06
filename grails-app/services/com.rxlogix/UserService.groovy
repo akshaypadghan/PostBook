@@ -83,4 +83,15 @@ class UserService {
             user.password = params.password
             user.save()
         }
+
+        boolean temporaryPassword(params){
+            User user = User.findByEmail(params.emailInput)
+            if(user){
+                user.password = "pwd@123"
+                return true
+            }else{
+                return false
+            }
+
+        }
 }

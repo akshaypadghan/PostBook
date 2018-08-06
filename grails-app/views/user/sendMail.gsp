@@ -15,6 +15,9 @@
     <body>
             <hr>
             <div class="container">
+                <g:if test='${flash.message}'>
+                   <div class='alert alert-success'>${flash.message}</div>
+                </g:if>
                 <div class="row">
                     <div class="row">
                         <div class="col-md-4 col-md-offset-4">

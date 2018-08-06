@@ -9,8 +9,8 @@ class UserGroupController {
     UserGroupService userGroupService
     UserGroup userGroup
     def index() {
-      int id=userGroup.id
-      redirect(action: 'groupInfo', id:'id')
+      //int id=userGroup.id
+      redirect(uri:"/userInfo/${userGroup.id}")
      }
 
 
@@ -31,7 +31,7 @@ class UserGroupController {
 
 
     def createGroup(){
-     def userList=User.list()
+     def userList = User.list()
      String userName = session.user
      User user = User.findByUsername(userName)
      render(view:'createGroup', model:[userList:userList, activeUser: user])

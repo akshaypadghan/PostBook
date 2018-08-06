@@ -92,7 +92,7 @@
                         <li class="dropdown">
                               <a href="#" data-toggle="dropdown" class="dropdown-toggle glyphicon glyphicon-user"><b class="caret"></b></a>
                               <ul class="dropdown-menu">
-                                    <li>  &nbsp;&nbsp;&nbsp; Hello,  ${session.user}</li>
+                                    <li><g:link controller="user" action="editProfile" >  &nbsp;&nbsp;&nbsp; Hello,  ${session.user}</g:link></li>
                                     <li>
                                         <form name="logout" method="POST" action="${createLink(controller:'logout') }">
                                         &nbsp;&nbsp;<input class="btn btn-success" type="submit" value="logout"></form>
@@ -134,7 +134,12 @@
                                 <p class="form-control-static">${user.email}</p>
                               </div>
                             </div>
-
+                            <div class="form-group">
+                              <label class="control-label col-sm-2" for="dob">DOB:</label>
+                              <div class="col-sm-10">
+                               <p class="form-control-static">${user.dob.clearTime()}</p>
+                              </div>
+                            </div>
                             <div class="form-group">
                               <label class="control-label col-sm-2" for="username">Username:</label>
                               <div class="col-sm-10">

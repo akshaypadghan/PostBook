@@ -14,13 +14,12 @@ class UserController {
 
 
     def index() {
-            render "You now have access to the page...congrats"
+            redirect(action: 'dashBoard')
     }
 
     def save(){
         userService.save(params)
         flash.message = "Please LogIn Now!!!"
-        //need to display message that sign up is successful and user should go and login
         redirect(controller: 'login', action: 'auth')
     }
 
@@ -63,10 +62,15 @@ class UserController {
 
     def sendMail(){
 
-        sendMail {
-            to "${params.emailInput}"
-            subject "password reset"
-            body 'your temporary password is "jsdas3ed3"'
+        if(userService.temporaryPassword(params)){
+            flash.message = "Temporary password is sent on your mail id"
+            sendMail {
+                to "${params.emailInput}"
+                subject "password reset"
+                body 'your temporary password is "pwd@123"'
+            }
+        }else{
+            flash.message = "Try again with registered email id...this mail id is not registered with us"
         }
     }
 

@@ -90,7 +90,7 @@
                         <li class="dropdown">
                                         <a href="#" data-toggle="dropdown" class="dropdown-toggle glyphicon glyphicon-user"><b class="caret"></b></a>
                                         <ul class="dropdown-menu">
-                                            <li>&nbsp;&nbsp;&nbsp; Hello, ${session.user}</li>
+                                            <li><g:link controller="user" action="editProfile" >  &nbsp;&nbsp;&nbsp; Hello,  ${session.user}</g:link></li>
                                             <li>
                                                 <form name="logout" method="POST" action="${createLink(controller:'logout') }">
                                                &nbsp;&nbsp; <input class="btn btn-success" type="submit" value="logout"></form>
