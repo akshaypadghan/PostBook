@@ -68,6 +68,8 @@ grails.project.dependency.resolution = {
         // asset-pipeline 2.0+ requires Java 7, use version 1.9.x with Java 6
         compile ":asset-pipeline:2.5.7"
 
+        //send mail plugin here
+        compile "org.grails.plugins:mail:1.0.7"
 
         // plugins needed at runtime but not for compilation
         runtime ":hibernate4:4.3.10" // or ":hibernate:3.6.10.18"
@@ -77,6 +79,7 @@ grails.project.dependency.resolution = {
 
         //spring security core plugin lies here...uncomment when needed
         compile "org.grails.plugins:spring-security-core:2.0.0"
+
 
         // Uncomment these to enable additional asset-pipeline capabilities
         //compile ":sass-asset-pipeline:1.9.0"

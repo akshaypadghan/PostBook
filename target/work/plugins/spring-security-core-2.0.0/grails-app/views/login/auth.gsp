@@ -148,6 +148,9 @@
                                   <p>
                                        <input type='submit' id="submit" value='${message(code: "springSecurity.login.button")}'/>
                                   </p>
+                                  <p>
+                                        <g:link controller="user" action="resetPassword"> forgot Password? Click here to reset</g:link>
+                                  </p>
                                </form>
                           </div>
                         </div>

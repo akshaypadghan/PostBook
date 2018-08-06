@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>DashBoard</title>
+  <title>UserInfo</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -92,7 +92,7 @@
                         <li class="dropdown">
                               <a href="#" data-toggle="dropdown" class="dropdown-toggle glyphicon glyphicon-user"><b class="caret"></b></a>
                               <ul class="dropdown-menu">
-                                    <li><g:link controller="user" action="editProfile" >  &nbsp;&nbsp;&nbsp; Hello,  ${session.user}</g:link></li>
+                                    <li>  &nbsp;&nbsp;&nbsp; Hello,  ${session.user}</li>
                                     <li>
                                         <form name="logout" method="POST" action="${createLink(controller:'logout') }">
                                         &nbsp;&nbsp;<input class="btn btn-success" type="submit" value="logout"></form>
@@ -120,28 +120,48 @@
 
                     </div>
                     <div class="col-sm-8 text-left" id="wrapper">
-
-                        <g:form>
-                          <h3>Post What's on Your Mind...(max 1000 characters)</h3>
-                            <textarea name="description" id="description" minlength="10" maxlength="1000" rows="6" cols="88"></textarea>
-                           <g:actionSubmit value="Post" action="createPost" class="btn btn-primary"/>
-                           <div class="form-group">
-                               <label for="groupList">Groups:</label></br>
-                               <select id="groupList" name="groupList" multiple="multiple">
-                                 <g:each in="${user_groups}" var="user_group">
-                                    <option id="${user_group}">${user_group.title}</option>
-                                 </g:each>
-                               </select>
-                               <g:actionSubmit value="Post to Group" controller="user" action="createPostForGroup" class="btn btn-success"/>
+                        </br></br>
+                        <g:form class="form-horizontal" controller="user">
+                            <div class="form-group">
+                              <label class="control-label col-sm-2" for="name">User Name::</label>
+                              <div class="col-sm-10">
+                                <p class="form-control-static">${user.name}</p>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label col-sm-2" for="email">Email:</label>
+                              <div class="col-sm-10">
+                                <p class="form-control-static">${user.email}</p>
+                              </div>
                             </div>
 
-                        </g:form>
-                         <hr>
-                        <h3>Post Related to You....</h3>
+                            <div class="form-group">
+                              <label class="control-label col-sm-2" for="username">Username:</label>
+                              <div class="col-sm-10">
+                                <p class="form-control-static">${user.username}</p>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                               <label class="control-label col-sm-2" for="pwd">Password:</label>
+                               <div class="col-sm-10">
+                                  <input name="password" id="password" value="${user.password}"/>
+                               </div>
+                            </div>
+                            <div class="form-group">
+                               <label class="control-label col-sm-2" for="pwd">Address:</label>
+                               <div class="col-sm-10">
+                                 <p class="form-control-static">${user.address}</p>
+                               </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label col-sm-2" for="update"></label>
+                              <div class="col-sm-5">
+                                <g:actionSubmit value="update" action="updateUser" class="btn btn-primary"/>
+                              </div>
+                            </div>
 
-                           <g:each in="${posts}" var="post">
-                                  <g:render template="post" model="['post':post]"/>
-                           </g:each>
+                          </g:form>
+
 
                     </div>
 
@@ -159,13 +179,6 @@
                   <p>This site is designed and developed by Akshay Padghan</p>
                 </footer>
 
-         <script type="text/javascript">
-                $(function () {
-                    $('#groupList').multiselect({
-                        includeSelectAllOption: true
-                    });
-                });
-            </script>
 
 
 </body>

@@ -39,6 +39,18 @@ class UserService {
             return posts
         }
 
+        Map editProfile(params, String userName) {
+
+            User user = User.findByUsername(userName)
+            ArrayList<UserGroup> user_groups = new ArrayList<UserGroup>()
+            user_groups.addAll(user.groups)
+            Map results = [:]
+            results.put("user", user)
+            results.put("user_groups", user_groups)
+            return results
+        }
+
+
         Map userInfo(params){
             Map results = [:]
             User user=User.findById(params.id)
@@ -64,5 +76,11 @@ class UserService {
                 }
             }
 
+        }
+
+        void updateUser(params, String userName){
+            User user = User.findByUsername(userName)
+            user.password = params.password
+            user.save()
         }
 }

@@ -1,5 +1,7 @@
 package com.rxlogix
 
+
+import grails.plugin.mail.*
 import grails.plugin.springsecurity.annotation.Secured
 
 @Secured('permitAll')
@@ -8,6 +10,7 @@ class UserController {
 
     UserService userService
     static String userName
+    MailService mailService
 
 
     def index() {
@@ -54,12 +57,27 @@ class UserController {
         render(view: "userInfo", model:[user_name:session.user, user:results.user, user_groups:results.user_groups, posts: results.posts])
     }
 
-    def deleteUser(){
-
+    def resetPassword(){
+            render(view: 'sendMail')
     }
 
-    def editUser(){
+    def sendMail(){
 
+        sendMail {
+            to "${params.emailInput}"
+            subject "password reset"
+            body 'your temporary password is "jsdas3ed3"'
+        }
+    }
+
+    def editProfile(){
+        Map results = userService.editProfile(params, session.user)
+        render(view: 'editProfile', model: [user_name: session.user, user: results.user, user_groups: results.user_groups])
+    }
+    def updateUser(){
+        userName = session.user
+        userService.updateUser(params, session.user)
+        redirect(action: 'dashBoard')
     }
 
 

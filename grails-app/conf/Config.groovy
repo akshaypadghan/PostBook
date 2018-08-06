@@ -56,6 +56,19 @@ grails {
         }
         // escapes all not-encoded output at final stage of outputting
         // filteringCodecForContentType.'text/html' = 'html'
+
+    }
+
+    //send mail related code
+    mail {
+        host = "smtp.gmail.com"
+        port = 465
+        username = "padghanaksh@gmail.com"
+        password = "nevergiveup0123"
+        props = ["mail.smtp.auth":"true",
+                 "mail.smtp.socketFactory.port":"465",
+                 "mail.smtp.socketFactory.class":"javax.net.ssl.SSLSocketFactory",
+                 "mail.smtp.socketFactory.fallback":"false"]
     }
 }
 

@@ -164,13 +164,6 @@
                   <p>This site is designed and developed by Akshay Padghan</p>
                 </footer>
 
-         <script type="text/javascript">
-                $(function () {
-                    $('#groupList').multiselect({
-                        includeSelectAllOption: true
-                    });
-                });
-            </script>
 
 
 </body>
