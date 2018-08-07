@@ -124,38 +124,38 @@
                         <g:form class="form-horizontal" controller="user">
                             <div class="form-group">
                               <label class="control-label col-sm-2" for="name">User Name::</label>
-                              <div class="col-sm-10">
-                                <p class="form-control-static">${user.name}</p>
+                              <div class="col-sm-5">
+                                <input type="text"  pattern="[A-Za-z ]*" class="form-control" name="name" id="name" minlength="3" value="${user.name}"  required>
                               </div>
                             </div>
                             <div class="form-group">
                               <label class="control-label col-sm-2" for="email">Email:</label>
-                              <div class="col-sm-10">
-                                <p class="form-control-static">${user.email}</p>
+                              <div class="col-sm-5">
+                                <input type="email" class="form-control" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" data-error="that doesn't seem valid email" name="email" id="email" value="${user.email}" required>
                               </div>
                             </div>
                             <div class="form-group">
                               <label class="control-label col-sm-2" for="dob">DOB:</label>
-                              <div class="col-sm-10">
-                               <p class="form-control-static">${user.dob.clearTime()}</p>
+                              <div class="col-sm-5">
+                               <input type="date" name="dob" class="form-control" id="dob" value="${user.dob.format('YYYY-MM-dd')}" required/>
                               </div>
                             </div>
                             <div class="form-group">
                               <label class="control-label col-sm-2" for="username">Username:</label>
-                              <div class="col-sm-10">
+                              <div class="col-sm-5">
                                 <p class="form-control-static">${user.username}</p>
                               </div>
                             </div>
                             <div class="form-group">
                                <label class="control-label col-sm-2" for="pwd">Password:</label>
-                               <div class="col-sm-10">
-                                  <input name="password" id="password" value="${user.password}"/>
+                               <div class="col-sm-5">
+                                  <input type="password" name="password" class="form-control" id="password" value="${user.password}" required/>
                                </div>
                             </div>
                             <div class="form-group">
-                               <label class="control-label col-sm-2" for="pwd">Address:</label>
-                               <div class="col-sm-10">
-                                 <p class="form-control-static">${user.address}</p>
+                               <label class="control-label col-sm-2" for="address">Address:</label>
+                               <div class="col-sm-5">
+                                 <input type="text" class="form-control" name="address" id="address" value="${user.address}" required/>
                                </div>
                             </div>
                             <div class="form-group">

@@ -11,6 +11,7 @@ class UserController {
     UserService userService
     static String userName
     MailService mailService
+    PostTrackerJob postTrackerJob
 
 
     def index() {
@@ -43,12 +44,9 @@ class UserController {
 
     def dashBoard(){
         userName = session.user
-        User user=User.findByUsername(userName)
-        ArrayList<UserGroup> user_groups = new ArrayList<UserGroup>()
-        user_groups.addAll(user.groups)
-        List<Post> posts=Post.listOrderByPostCreatedOn(max:5, offset:0, order:"desc")
+        Map results = userService.dashBoard(userName)
 
-        render(view: "dashboard", model:[user_name:userName, user_groups:user_groups, posts: posts])
+        render(view: "dashboard", model:[user_name:userName, user_groups:results.user_groups, posts: results.posts])
     }
 
     def userInfo(){

@@ -4,8 +4,8 @@ class BootStrap {
     def init = { servletContext ->
 
 
-        Role roleAdmin=new Role('ROLE_ADMIN').save(flush: true)
-        Role roleUser=new Role('ROLE_USER').save(flush: true)
+        Role roleAdmin = new Role('ROLE_ADMIN').save(flush: true)
+        Role roleUser = new Role('ROLE_USER').save(flush: true)
 
         User user0 = new User(name: 'akshay', dob: new Date(98,2,3), username: 'Something', email:'mail@company.com', password:'secret', gender:'male', address:'destination changed').save(flush:true)
         User user1 = new User(name: 'rahil', dob:new Date(year: 22, month: 11, date: 12), username: 'user1', email:'mailidhere@company.com', password:'secret', gender:'male', address:'somewhere close').save(flush: true)
@@ -16,6 +16,7 @@ class BootStrap {
         UserRole.create(user0, roleUser, true)
         UserRole.create(user1, roleUser, true)
         UserRole.create(user2, roleUser, true)
+
 
     }
     def destroy = {

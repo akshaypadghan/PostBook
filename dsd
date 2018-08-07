@@ -1,0 +1,168 @@
+[33mcommit 235a5c872c7fd5699e932f2f7c53481dc91de755[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: akshaypadghan <akshpadghan@gmail.com>
+Date:   Mon Aug 6 14:33:19 2018 +0530
+
+    update - cron job scheduled
+
+[33mcommit b51c5094eae59aec7217016f093d7ba8a21b0c22[m
+Author: akshaypadghan <akshpadghan@gmail.com>
+Date:   Mon Aug 6 12:57:39 2018 +0530
+
+    group related to post can be seen on dashBoard now
+
+[33mcommit 02c8e8e45980bfa328c5746f3b8e8c14171b151d[m
+Author: akshaypadghan <akshpadghan@gmail.com>
+Date:   Mon Aug 6 12:01:02 2018 +0530
+
+    password reset facility is available now
+
+[33mcommit 054fc0633b718c302edd47f711cb6818256c829f[m
+Author: akshaypadghan <akshpadghan@gmail.com>
+Date:   Mon Aug 6 10:36:49 2018 +0530
+
+    user profile edit is enabled
+
+[33mcommit 9fa3302af106ad4653149438078dff15c568ef51[m
+Author: akshaypadghan <akshpadghan@gmail.com>
+Date:   Sun Aug 5 22:59:17 2018 +0530
+
+    user information page added
+
+[33mcommit 0f954c5195580bbd8a3066c89feea541d0473376[m
+Author: akshaypadghan <akshpadghan@gmail.com>
+Date:   Fri Aug 3 19:42:27 2018 +0530
+
+    signUp page in redirecting to Login page now
+
+[33mcommit 5620979dce55cd9454d19c6075033dd2315f88f5[m
+Author: akshaypadghan <akshpadghan@gmail.com>
+Date:   Fri Aug 3 11:48:31 2018 +0530
+
+    userGroup can be created for single person now
+
+[33mcommit 9e347e199b8eee39a5c390e499f7651ed672e465[m
+Author: akshaypadghan <akshpadghan@gmail.com>
+Date:   Thu Aug 2 17:26:04 2018 +0530
+
+    integrated with spring security
+
+[33mcommit ecae7f2f5cfca1f46375ab0e2a3b203056a5bbb4[m
+Author: akshaypadghan <akshpadghan@gmail.com>
+Date:   Mon Jul 30 15:12:56 2018 +0530
+
+    updated .gitignore
+
+[33mcommit 93836e007ebd58314cbcd90c4b51f27e3246e15c[m
+Author: akshaypadghan <akshpadghan@gmail.com>
+Date:   Mon Jul 30 15:07:46 2018 +0530
+
+    updated files
+
+[33mcommit 98b0bbab0635953babfe57fe81c715181a229e09[m
+Author: akshaypadghan <akshpadghan@gmail.com>
+Date:   Mon Jul 30 15:04:59 2018 +0530
+
+    updated files
+
+[33mcommit 8f82f33b0fd384e15f137717f562a6b45f718296[m
+Author: akshaypadghan <akshpadghan@gmail.com>
+Date:   Mon Jul 30 14:09:33 2018 +0530
+
+    can post in group through user's DashBoard now
+
+[33mcommit 11291389a5810b3624f86a8d065ac149c6cbede0[m
+Author: akshaypadghan <akshpadghan@gmail.com>
+Date:   Mon Jul 30 08:36:03 2018 +0530
+
+    userGroup is updated
+
+[33mcommit 74b1b98beb1e6c9e246b520c426f30dd81c7df04[m
+Author: akshaypadghan <akshpadghan@gmail.com>
+Date:   Sun Jul 29 11:02:57 2018 +0530
+
+    updated user's and usergroup's dashboard
+
+[33mcommit e7277f91188e4f5ca4a77eb825b62ff0acb26af7[m
+Author: akshaypadghan <akshpadghan@gmail.com>
+Date:   Sat Jul 28 18:10:42 2018 +0530
+
+    changed Post.groovy file
+
+[33mcommit 5f8a25c43ef43764cd92d8ea8bf0c6d5879d1a6b[m
+Author: akshaypadghan <akshpadghan@gmail.com>
+Date:   Fri Jul 27 12:55:35 2018 +0530
+
+    changed directory structure inside
+
+[33mcommit dd72d4ad34cfc84ffd39f3d16b69523ae00d15dd[m
+Author: akshaypadghan <akshpadghan@gmail.com>
+Date:   Thu Jul 26 19:48:02 2018 +0530
+
+    made changes in dashBoard.gsp and fixed issues related to controller
+
+[33mcommit 2a313c0680f3e36e129eae399a168b727414f708[m
+Author: akshaypadghan <akshpadghan@gmail.com>
+Date:   Thu Jul 26 11:51:37 2018 +0530
+
+    again some changes
+
+[33mcommit 038c8e11a097655e648ae3433c8e82fe7d5344c5[m
+Author: akshaypadghan <akshpadghan@gmail.com>
+Date:   Wed Jul 25 18:06:42 2018 +0530
+
+    something is chaged not sure what
+
+[33mcommit 1d1660b3bce0e07581adf2ce52999442119a9773[m
+Author: akshaypadghan <akshpadghan@gmail.com>
+Date:   Wed Jul 25 17:42:04 2018 +0530
+
+    added time feature in domain post
+
+[33mcommit 6d8f6cf0f0dfa913b675c9d9cbadd98020f3cff6[m
+Author: akshaypadghan <akshpadghan@gmail.com>
+Date:   Wed Jul 25 17:21:13 2018 +0530
+
+    made few changes in dashBoard.gsp
+
+[33mcommit 1fbb61742d43b11ffa0da2a0a74bbbd7b338c09d[m
+Author: akshaypadghan <akshpadghan@gmail.com>
+Date:   Wed Jul 25 14:32:31 2018 +0530
+
+    made few changes in dashBoard.gsp
+
+[33mcommit 1293e5f74e6ed23016ebfd92d29fd4194440d80c[m
+Author: akshaypadghan <akshpadghan@gmail.com>
+Date:   Tue Jul 24 18:00:48 2018 +0530
+
+    made changes in createGroup.gsp file, dropdown is better now
+
+[33mcommit b57927ba89b0d965b648b6d6e1319bdaf736f7b5[m
+Author: akshaypadghan <akshpadghan@gmail.com>
+Date:   Tue Jul 24 17:41:42 2018 +0530
+
+    few changes in ui
+
+[33mcommit 99967e77a356a3fd5ed6eb9134c94c4031a0f828[m
+Merge: c11b1a5 a18ef9a
+Author: akshaypadghan <akshpadghan@gmail.com>
+Date:   Tue Jul 24 15:22:35 2018 +0530
+
+    Merge branch 'master' of https://github.com/akshaypadghan/PostBook
+
+[33mcommit c11b1a5d38fa003819ae2f176b5b11d5ed9d2533[m
+Author: akshaypadghan <akshpadghan@gmail.com>
+Date:   Tue Jul 24 15:21:20 2018 +0530
+
+    added ignore file type rules
+
+[33mcommit a18ef9afd3157b4d06bf2b1cd97a72c003f48878[m
+Author: Akshay <28186951+akshaypadghan@users.noreply.github.com>
+Date:   Tue Jul 24 15:18:10 2018 +0530
+
+    Create README.md
+
+[33mcommit 7b35f649af447ed4f3e869a13a964bc73b06207b[m
+Author: akshaypadghan <akshpadghan@gmail.com>
+Date:   Tue Jul 24 15:16:27 2018 +0530
+
+    this is code for postboook

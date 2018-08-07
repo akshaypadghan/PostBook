@@ -86,7 +86,7 @@
                     <div class="collapse navbar-collapse" id="myNavbar">
                       <ul class="nav navbar-nav">
                         <li class="active"><g:link controller='user' action='dashBoard'>Home</g:link></li>
-                        <li>About</li>
+                        <li class="active"><g:link controller='post' action='showCount'>PostCount</g:link></li>
                       </ul>
                       <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
@@ -122,27 +122,30 @@
                     <div class="col-sm-8 text-left" id="wrapper">
                         </br></br>
                         <form class="form-horizontal">
+
                             <div class="form-group">
-                              <label class="control-label col-sm-2" for="name">User Name::</label>
+                              <label class="control-label col-sm-2" for="name">User Name:</label>
                               <div class="col-sm-10">
                                 <p class="form-control-static">${user.name}</p>
                               </div>
                             </div>
+
                             <div class="form-group">
                               <label class="control-label col-sm-2" for="email">Email:</label>
                               <div class="col-sm-10">
                                 <p class="form-control-static">${user.email}</p>
                               </div>
                             </div>
+
                             <div class="form-group">
-                              <label class="control-label col-sm-2" for="pwd">Username:</label>
+                              <label class="control-label col-sm-2" for="username">Username:</label>
                               <div class="col-sm-10">
                                 <p class="form-control-static">${user.username}</p>
                               </div>
                             </div>
                           </form>
                          <hr>
-                        <h3>Post Related to User....</h3>
+                        <h3>Posts by User....</h3>
 
                            <g:each in="${posts}" var="post">
                                   <g:render template="post" model="['post':post]"/>

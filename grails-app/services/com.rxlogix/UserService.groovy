@@ -58,7 +58,7 @@ class UserService {
             ArrayList<UserGroup> user_groups = new ArrayList<UserGroup>()
             user_groups.addAll(user.groups)
             results.put("user_groups", user_groups)
-            List<Post> posts=Post.listOrderByPostCreatedOn(max:5, offset:0, order:"desc")
+            List<Post> posts=Post.findAllByUser(user, [sort: 'postCreatedOn', max: 5])
             results.put("posts", posts)
             return results
         }
@@ -75,12 +75,27 @@ class UserService {
                     userGroupService.createPost(params, userName, userGroup)
                 }
             }
+        }
 
+        Map dashBoard(String userName){
+            Map results = [:]
+            User user=User.findByUsername(userName)
+            ArrayList<UserGroup> user_groups = new ArrayList<UserGroup>()
+            user_groups.addAll(user.groups)
+            results.put('user_groups', user_groups)
+            List<Post> posts=Post.listOrderByPostCreatedOn(max:5, offset:0, order:"desc")
+            results.put('posts', posts)
+            return results
         }
 
         void updateUser(params, String userName){
             User user = User.findByUsername(userName)
             user.password = params.password
+            user.email = params.email
+            user.address = params.address
+            user.name = params.name
+            params.dob = Date.parse("yyyy-MM-dd", params.dob).clearTime()
+            user.dob = params.dob
             user.save()
         }
 

@@ -146,7 +146,7 @@
                                   </p>
 
                                   <p>
-                                       <input type='submit' id="submit" value='${message(code: "springSecurity.login.button")}'/>
+                                       <input type='submit' id="submit" class="btn btn-secondary" value='${message(code: "springSecurity.login.button")}'/>
                                   </p>
                                   <p>
                                         <g:link controller="user" action="resetPassword"> forgot Password? Click here to reset</g:link>
@@ -206,7 +206,7 @@
                                                   <input type="text" class="form-control" name="address" id="address" placeholder="block 4, st. annes" required>
                                               </div>
 
-                                                  <g:actionSubmit value="Sign Up" action="save"/>
+                                                  <g:actionSubmit value="Sign Up" action="save" class="btn btn-primary"/>
 
                               </g:form>
                             </div>

@@ -86,7 +86,7 @@
                     <div class="collapse navbar-collapse" id="myNavbar">
                       <ul class="nav navbar-nav">
                         <li class="active"><g:link controller='user' action='dashBoard'>Home</g:link></li>
-                        <li>About</li>
+                        <li class="active"><g:link controller='post' action='showCount'>PostCount</g:link></li>
                       </ul>
                       <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
