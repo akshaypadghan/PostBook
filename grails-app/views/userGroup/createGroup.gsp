@@ -12,87 +12,8 @@
         rel="stylesheet" type="text/css" />
     <script src="http://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/js/bootstrap-multiselect.js"
         type="text/javascript"></script>
-        <style>
-             #groupForm{
-                              border-radius: 12px;
-                              margin-top:100px;
-                              padding: 50px;
-                              border-style: outset;
-                              border-color: grey;
-                            }
-
-
-    /* Remove the navbar's default margin-bottom and rounded borders */
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
-
-    /* Set gray background color and 100% height */
-    .sidenav {
-      padding-top: 20px;
-      background-color: #d4d6d8;
-      min-height:100vh;
-      max-height:300vh;
-
-    }
-
-    #groupsList{
-        padding-left:45px;
-    }
-
-    #wrapper{
-           overflow-y:scroll;
-           height:100vh;
-
-           }
-
-    .card{
-      background-color: #e6ecf7;
-    }
-    /* Set black background color, white text and some padding */
-    footer {
-      background-color: #555;
-      color: white;
-      padding: 15px;
-    }
-
-    .glyphicon-user{
-      font-size: 175%;
-      color: white;
-    }
-    .card-header{
-      padding-top: 5px;
-      padding-bottom: 5px;
-    }
-
-    html, body{
-       min-height:100vh;
-       //height:100vh;
-    }
-
-
-
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: 100vh;
-        padding: 15px;
-      }
-      .row.content {height:auto;}
-    }
-  </style>
-
-    <script type="text/javascript">
-        $(function () {
-            $('#users').multiselect({
-                includeSelectAllOption: true
-            });
-        });
-    </script>
+    <asset:stylesheet src="creategroup.css"/>
+    <asset:javascript src="creategroup.js"/>
     </head>
         <body>
 
@@ -107,13 +28,17 @@
                         <div class="collapse navbar-collapse" id="myNavbar">
                           <ul class="nav navbar-nav">
                             <li class="active"><g:link controller="user" action="dashBoard">Home</g:link></li>
+                            <li class="active"><g:link controller='post' action='showCount'>PostCount</g:link></li>
                           </ul>
                           <ul class="nav navbar-nav navbar-right">
                             <li class="dropdown">
                                <a href="#" data-toggle="dropdown" class="dropdown-toggle glyphicon glyphicon-user"><b class="caret"></b></a>
                                <ul class="dropdown-menu">
                                    <li> &nbsp;&nbsp;&nbsp; Hello, ${session.user}</li>
-                                   <li><g:link controller="user" action="index">Logout</g:link></li>
+                                   <li>
+                                       <form name="logout" method="POST" action="${createLink(controller:'logout') }">
+                                       &nbsp;&nbsp;<input class="btn btn-success" type="submit" value="logout"></form>
+                                   </li>
                                </ul>
                               </li>
                           </ul>

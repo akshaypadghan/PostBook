@@ -33,12 +33,13 @@ class UserController {
     def createPost(){
         List<Post> posts
         userName = session.user
+        Map results =[:]
         if(params.description && (params.description).length()<=1000){
-            posts=userService.createPost(params, userName)
+            results = userService.createPost(params, userName)
         }else{
             posts=User.findByUsername(userName)*.posts
         }
-        render(view: "dashboard", model:[user_name:params.inputUser, posts:posts, user_groups:UserGroup.list()])
+        render(view: "dashboard", model:[user_name:params.inputUser, posts:results?results.posts:posts, user_groups:results?results.user_groups:UserGroup.list()])
     }
 
 

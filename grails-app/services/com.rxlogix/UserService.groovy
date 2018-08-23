@@ -14,29 +14,16 @@ class UserService {
         }
 
 
-        boolean login(params){
-            String name = params.username
-            String password = params.password
-            def user = User.findByUsername(name)
-            if(user){
-                if(user.password==password){
-                    return true
-                }else {
-                    return false
-                }
-            }else{
-                return false
-            }
-        }
-
-
-         List<Post> createPost(params, String userName){
+         Map createPost(params, String userName){
+            Map results =[:]
             Post post = new Post(params)
             post.user = User.findByUsername(userName)
             post.postCreatedOn=new Date()
             post.save(failOnError: true)
             List<Post> posts=Post.findAllByUser(post.user, [sort:'postCreatedOn', order:'desc', max:5])
-            return posts
+            results.put("posts", posts)
+            results.put("user_groups", post.user.groups)
+            return results
         }
 
         Map editProfile(params, String userName) {
@@ -58,7 +45,7 @@ class UserService {
             ArrayList<UserGroup> user_groups = new ArrayList<UserGroup>()
             user_groups.addAll(user.groups)
             results.put("user_groups", user_groups)
-            List<Post> posts=Post.findAllByUser(user, [sort: 'postCreatedOn', max: 5])
+            List<Post> posts=Post.findAllByUser(user)
             results.put("posts", posts)
             return results
         }

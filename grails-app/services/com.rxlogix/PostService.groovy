@@ -6,18 +6,21 @@ import grails.transaction.Transactional
 class PostService {
 
     static int postCount
+
     def serviceMethod() {
 
     }
 
-    int showPostCount(){
+    int showPostCount() {
         return postCount
     }
 
-    int updatePostCount(){
+    int updatePostCount() {
+
         Date date = new Date(System.currentTimeMillis() - 3600 * 2000)
         int latestPostCount = Post.countByPostCreatedOnBetween(date, new Date())
         return latestPostCount
+
     }
 
 }

@@ -1,24 +1,6 @@
 <html>
     <head>
-    <style>
-            #postedBy{
-
-                text-align:left;
-            }
-            #postedOn{
-                text-align:right;
-            }
-            .card-text{
-                padding-top:10px;
-                text-align: left;
-                padding-left:20px;
-            }
-
-            .card-title{
-                padding-top: 8px;
-            }
-        </style>
-
+        <asset:stylesheet src="post.css"/>
     </head>
     <body>
             <div class="card text-center">

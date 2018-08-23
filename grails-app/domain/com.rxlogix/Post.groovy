@@ -3,7 +3,6 @@ package com.rxlogix
 class Post {
     String description
     Date postCreatedOn
-    //later write belongs to relation with groups
     static belongsTo=[user: User]
     UserGroup userGroup
 

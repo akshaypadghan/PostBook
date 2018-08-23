@@ -1,0 +1,95 @@
+
+.container-fluid {
+    padding: 0px;
+    margin: 0px;
+    background-color: #eff1f4;
+
+}
+
+#footer1 {
+    background-color: brown;
+    color: white;
+    height: 90px;
+}
+
+.jumbotron {
+    background-color: #6390f2;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+
+}
+
+#heading {
+    padding-top: 70px;
+    padding-left: 80px;
+}
+
+@media (max-width: 768px) {
+    #form1 {
+        border-style: outset;
+        border-radius: 5px;
+        border-color: grey;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    img {
+        padding-right: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    #heading {
+        margin: 10px;
+        padding: 10px;
+        padding-left: 15px;
+    }
+
+    #form1 {
+
+        margin-bottom: 0px;
+        margin-top: 0px;
+        border-style: outset;
+        border-radius: 5px;
+        border-color: grey;
+        margin-left: 0px;
+    }
+}
+
+strong {
+    font-size: 70px;
+}
+
+#form1 {
+    padding: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-style: outset;
+    border-radius: 10px;
+    border-color: grey;
+    margin-left: 5px;
+
+}
+
+#signUpForm {
+    border-radius: 12px;
+    margin-top: 20px;
+    padding: 30px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    border-style: outset;
+    border-color: grey;
+}
+
+img {
+    padding-top: 20px;
+}
+

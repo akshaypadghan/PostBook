@@ -51,6 +51,7 @@ class SpringSecurityService {
 	def userDetailsService
 
 	/**
+	 *
 	 * Get the currently logged in user's principal. If not authenticated and the
 	 * AnonymousAuthenticationFilter is active (true by default) then the anonymous
 	 * user's name will be returned ('anonymousUser' unless overridden).
