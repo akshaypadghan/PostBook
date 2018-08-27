@@ -18,4 +18,8 @@ class PostController {
     def ajaxCount() {
         render postService.updatePostCount()
     }
+
+    def testAction(){
+        render "this is just to check merge conflicts"
+    }
 }
