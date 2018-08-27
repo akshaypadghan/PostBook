@@ -20,6 +20,6 @@ class PostController {
     }
 
     def testActionInMaster(){
-        render "to check merge conflict in master branch"
+        render "how about creating another merge conflict"
     }
 }
