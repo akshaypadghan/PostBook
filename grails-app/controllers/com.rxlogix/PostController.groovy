@@ -19,7 +19,7 @@ class PostController {
         render postService.updatePostCount()
     }
 
-    def testActionInSamplebranch(){
+    def testActionInSample(){
             render "this is test action in sampleBranch"
     }
 }
