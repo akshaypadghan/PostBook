@@ -19,7 +19,7 @@ class PostController {
         render postService.updatePostCount()
     }
 
-    def testActionInMaster(){
-        render "how about creating another merge conflict"
+    def testActionInSample(){
+            render "this is test action in sampleBranch"
     }
 }
