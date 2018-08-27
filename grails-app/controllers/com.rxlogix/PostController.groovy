@@ -18,4 +18,8 @@ class PostController {
     def ajaxCount() {
         render postService.updatePostCount()
     }
+
+    def testAction(){
+        render "to check merge conflict in sampleBranch and master branch"
+    }
 }
