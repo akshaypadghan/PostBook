@@ -19,9 +19,7 @@ class PostController {
         render postService.updatePostCount()
     }
 
-    def testAction(){
-
-        render "to check merge conflict in sampleBranch and master branch, few more changed to check diff tooo"
-
+    def testActionInSamplebranch(){
+            render "this is test action in sampleBranch"
     }
 }
