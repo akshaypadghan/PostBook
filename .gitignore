@@ -9,6 +9,8 @@
 *.bat
 *.asscache
 .asscache
+.slcache/
+.slcache
 
 # Packages #
 ############
