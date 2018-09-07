@@ -23,4 +23,8 @@ class PostService {
 
     }
 
+    List<Post> ajaxPosts(){
+        return Post.list()
+    }
+
 }

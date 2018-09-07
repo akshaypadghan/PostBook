@@ -1,6 +1,6 @@
 package com.rxlogix
 
-
+import grails.converters.JSON
 import grails.plugin.mail.*
 import grails.plugin.springsecurity.annotation.Secured
 
@@ -81,6 +81,14 @@ class UserController {
         userName = session.user
         userService.updateUser(params, session.user)
         redirect(action: 'dashBoard')
+    }
+
+    def ajaxShowTable(){
+        render userService.showUsers() as JSON
+    }
+
+    def userTable(){
+        render (view: 'showTable')
     }
 
 

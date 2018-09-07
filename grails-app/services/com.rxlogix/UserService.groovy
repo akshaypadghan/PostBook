@@ -96,4 +96,8 @@ class UserService {
             }
 
         }
+        List<User> showUsers(){
+            List<User> users = User.list()
+            return users
+        }
 }
